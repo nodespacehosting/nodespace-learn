@@ -1,0 +1,22 @@
+site_name: NodeSpace Learn
+
+nav:
+  - Learn Home: index.md
+
+theme:
+  name: material
+  logo: img/nodespace-learn.png
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+  palette:
+    primary: indigo
+    accent: amber
+
+markdown_extensions:
+  - toc:
+      baselevel: 4
+      permalink: true
+  - admonition
