@@ -2,6 +2,8 @@ site_name: NodeSpace Learn
 
 nav:
   - Learn Home: index.md
+  - Servers:
+    - Overview: servers/overview.md
 
 theme:
   name: material
