@@ -1,24 +1,90 @@
 site_name: NodeSpace Learn
-
-nav:
-  - Learn Home: index.md
-  - Servers:
-    - Overview: servers/overview.md
+site_description: NodeSpace Learn is a collection of guides and tutorials for NodeSpace customers.
+site_author: NodeSpace Technologies, LLC
+site_url: https://learn.nodespace.com
+copyright: "Copyright &copy; NodeSpace Technologies, LLC"
 
 theme:
   name: material
-  logo: img/nodespace-learn.png
+  custom_dir: overrides
+  logo: assets/nodespace-learn.png
+  font:
+    text: 'Red Hat Text'
+    code: 'Red Hat Mono'
   features:
     - navigation.tabs
-    - navigation.expand
     - navigation.top
-    - toc.integrate
+    # - toc.integrate
   palette:
-    primary: indigo
-    accent: amber
+    scheme: nodespace
+
+extra_css:
+  - stylesheets/neoteroi-mkdocs.css
+  - stylesheets/extra.css
+
+plugins: 
+  - search
+
 
 markdown_extensions:
   - toc:
       baselevel: 4
       permalink: true
   - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - neoteroi.cards
+  - tables
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://nodespace.social/@nodespace
+      name: nodespace on Mastodon
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nodespace
+      name: nodespace on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/nodespacehosting
+      name: nodespace on GitHub
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/nodespacetech
+      name: nodespace on Facebook
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/nodespace
+      name: nodespace on LinkedIn
+
+nav:
+  - NodeSpace Home: https://www.nodespace.com
+  - Learn Home:
+    - Home: index.md
+    - Servers: servers/overview.md
+    - Hosting:
+      - Shared Hosting: hosting/shared/overview.md
+      - Reseller Hosting: hosting/reseller/overview.md
+      - WordPress Hosting: hosting/wordpress/overview.md
+  - Servers:
+    - Overview: servers/overview.md
+    - Dedicated Servers: 
+      - servers/dedicated/overview.md
+      - Provisioning: servers/dedicated/provisioning.md
+    - Virtual Private Servers: 
+      - servers/vps/overview.md
+    - Networking:
+      - servers/networking/public.md
+      - servers/networking/private.md
+    - Operating Systems: 
+      - servers/operating_systems.md
+      - servers/operating_systems/almalinux.md
+      - servers/operating_systems/centos.md
+      - servers/operating_systems/debian.md
+      - servers/operating_systems/fedora.md
+      - servers/operating_systems/freebsd.md
+      - servers/operating_systems/ubuntu.md
+
+      
