@@ -63,12 +63,26 @@ nav:
   - NodeSpace Home: https://www.nodespace.com
   - Learn Home:
     - Home: index.md
-    - Servers: servers/overview.md
-    - Hosting:
-      - Shared Hosting: hosting/shared/overview.md
-      - Reseller Hosting: hosting/reseller/overview.md
-      - WordPress Hosting: hosting/wordpress/overview.md
-  - Servers:
+    - Hosting Services: hosting/index.md
+    - Account &amp; Billing: billing/index.md
+    - Dedicated &amp; Virtual Servers: servers/overview.md
+  - Account &amp; Billing:
+    - Account &amp; Billing: account/index.md
+    - Billing Overview: account/billing.md
+  - Hosting Services:
+    - Overview: hosting/index.md
+    - Why we don't offer "Unlimited" plans: hosting/unlimited.md
+    - Shared Hosting: 
+      - Shared Hosting Overview: hosting/shared/overview.md
+      - Frequently Asked Questions: hosting/shared/faq.md
+      - Website Transfers:
+        - hosting/shared/self-transfer.md
+      - How to check your usage: hosting/shared/check-usage.md
+      - SSL Certificates:
+        - How multi-year SSL certificates work: hosting/shared/ssl/multi-year.md
+    - Reseller Hosting: hosting/reseller/overview.md
+    - WordPress Hosting: hosting/wordpress/overview.md
+  - Dedicated &amp; Virtual Servers:
     - Overview: servers/overview.md
     - Dedicated Servers: 
       - servers/dedicated/overview.md
@@ -86,5 +100,6 @@ nav:
       - servers/operating_systems/fedora.md
       - servers/operating_systems/freebsd.md
       - servers/operating_systems/ubuntu.md
+
 
       
