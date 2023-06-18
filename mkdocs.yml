@@ -4,7 +4,7 @@ site_author: NodeSpace Technologies, LLC
 site_url: https://learn.nodespace.com
 use_directory_urls: false
 repo_url: https://github.com/nodespacehosting/nodespace-learn
-edit_uri: blob/main/docs
+edit_uri: blob/main/docs/
 copyright: "Copyright &copy; NodeSpace Technologies, LLC"
 
 theme:
@@ -17,6 +17,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - content.action.edit
     # - toc.integrate
   palette:
     scheme: nodespace
