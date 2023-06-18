@@ -72,6 +72,7 @@ nav:
     - Dedicated &amp; Virtual Servers: servers/overview.md
   - Account &amp; Billing:
     - Account &amp; Billing: account/index.md
+    - Service Cancellation: account/cancellation.md
     - Billing Overview: account/billing.md
   - Hosting Services:
     - Overview: hosting/index.md
