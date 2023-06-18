@@ -2,6 +2,7 @@ site_name: NodeSpace Learn
 site_description: NodeSpace Learn is a collection of guides and tutorials for NodeSpace customers.
 site_author: NodeSpace Technologies, LLC
 site_url: https://learn.nodespace.com
+use_directory_urls: false
 copyright: "Copyright &copy; NodeSpace Technologies, LLC"
 
 theme:
@@ -64,7 +65,7 @@ nav:
   - Learn Home:
     - Home: index.md
     - Hosting Services: hosting/index.md
-    - Account &amp; Billing: billing/index.md
+    - Account &amp; Billing: account/index.md
     - Dedicated &amp; Virtual Servers: servers/overview.md
   - Account &amp; Billing:
     - Account &amp; Billing: account/index.md
@@ -80,6 +81,7 @@ nav:
       - How to check your usage: hosting/shared/check-usage.md
       - SSL Certificates:
         - How multi-year SSL certificates work: hosting/shared/ssl/multi-year.md
+      - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
     - Reseller Hosting: hosting/reseller/overview.md
     - WordPress Hosting: hosting/wordpress/overview.md
   - Dedicated &amp; Virtual Servers:
