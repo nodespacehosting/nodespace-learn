@@ -112,10 +112,15 @@ nav:
       - servers/operating_systems.md
       - servers/operating_systems/almalinux.md
       - servers/operating_systems/centos.md
+      - servers/operating_systems/cloudlinux.md
       - servers/operating_systems/debian.md
       - servers/operating_systems/fedora.md
       - servers/operating_systems/freebsd.md
+      - servers/operating_systems/opensuse.md
+      - servers/operating_systems/openvz.md
+      - servers/operating_systems/rocky_linux.md
       - servers/operating_systems/ubuntu.md
+      - servres/operating_systems/windows.md
   - Contributing:
     - Contributing Overview: contributing/index.md
     - Documentation Standards: contributing/standards.md
