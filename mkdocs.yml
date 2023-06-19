@@ -77,15 +77,25 @@ nav:
   - Hosting Services:
     - Overview: hosting/index.md
     - Why we don't offer "Unlimited" plans: hosting/unlimited.md
+    # --- BEGIN SHARED HOSTING ---
     - Shared Hosting: 
       - Shared Hosting Overview: hosting/shared/overview.md
       - Frequently Asked Questions: hosting/shared/faq.md
+      # --- BEGIN SHARED HOSTING: Account Management ---
+      - How to check your usage: hosting/shared/check-usage.md
+      # --- BEGIN SHARED HOSTING: cPanel ---
+      - cPanel:
+        - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
+      # --- END SHARED HOSTING: cPanel ---
+      # --- BEGIN SHARED HOSTING: Security ---
+      - SSL Certificates:
+        - How SSL certificates work: hosting/shared/ssl/how-ssl-works.md
+        - How multi-year SSL certificates work: hosting/shared/ssl/multi-year.md
+        - Free SSL Certificates: hosting/shared/ssl/free.md
+      # --- END SHARED HOSTING: Security ---
       - Website Transfers:
         - hosting/shared/self-transfer.md
-      - How to check your usage: hosting/shared/check-usage.md
-      - SSL Certificates:
-        - How multi-year SSL certificates work: hosting/shared/ssl/multi-year.md
-      - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
+    # --- END SHARED HOSTING ---
     - Reseller Hosting: hosting/reseller/overview.md
     - WordPress Hosting: hosting/wordpress/overview.md
   - Dedicated &amp; Virtual Servers:
@@ -106,6 +116,9 @@ nav:
       - servers/operating_systems/fedora.md
       - servers/operating_systems/freebsd.md
       - servers/operating_systems/ubuntu.md
+  - Contributing:
+    - Contributing Overview: contributing/index.md
+    - Documentation Standards: contributing/standards.md
 
 
       

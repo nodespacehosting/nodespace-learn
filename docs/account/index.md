@@ -7,3 +7,5 @@ This section contains information about billing and payments. Please feel free t
 
 ## Table of Contents
 
+1. [Billing](billing.md)
+2. [Cancellation](cancellation.md)
