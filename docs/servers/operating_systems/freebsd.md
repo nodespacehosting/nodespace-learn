@@ -8,10 +8,8 @@ FreeBSD is a free and open-source Unix-like operating system descended from the 
 
 | Current Version | Supported Until |
 | --------------- | --------------- |
-| FreeBSD 11      | March 31, 2021  |
-| FreeBSD 12      | March 31, 2023  |
-| FreeBSD 13      | March 31, 2025  |
-| FreeBSD 14      | TBD             |
+| FreeBSD 12      | December 31, 2023  |
+| FreeBSD 13      | January 31, 2026  |
 
 ## Using FreeBSD
 

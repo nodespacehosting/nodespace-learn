@@ -17,7 +17,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - content.action.edit
+    # - content.action.edit
+    - content.action.view
     # - toc.integrate
   palette:
     scheme: nodespace
@@ -104,7 +105,10 @@ nav:
       - servers/dedicated/overview.md
       - Provisioning: servers/dedicated/provisioning.md
     - Virtual Private Servers: 
-      - servers/vps/overview.md
+      - servers/vps/index.md
+    - Server Management:
+      - servers/management/index.md
+      - servers/management/vps.md
     - Networking:
       - servers/networking/public.md
       - servers/networking/private.md
@@ -118,9 +122,12 @@ nav:
       - servers/operating_systems/freebsd.md
       - servers/operating_systems/opensuse.md
       - servers/operating_systems/openvz.md
+      - servers/operating_systems/proxmox.md
+      - servers/operating_systems/proxmox/proxmox-backup-server.md
+      - servers/operating_systems/proxmox/proxmox-mail-gateway.md
       - servers/operating_systems/rocky_linux.md
       - servers/operating_systems/ubuntu.md
-      - servres/operating_systems/windows.md
+      - servers/operating_systems/windows.md
   - Contributing:
     - Contributing Overview: contributing/index.md
     - Documentation Standards: contributing/standards.md
