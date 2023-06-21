@@ -102,7 +102,15 @@ nav:
         - cPanel Email: hosting/shared/cpanel-email.md
         - cPanel Billing &amp; Support: hosting/shared/cpanel-billing.md
         - cPanel Files: hosting/shared/cpanel-files.md
-        - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
+        - cPanel Databases: hosting/shared/cpanel-databases.md
+        - cPanel Domains: hosting/shared/cpanel-domains.md
+        - cPanel Metrics: hosting/shared/cpanel-metrics.md
+        - cPanel Security: hosting/shared/cpanel-security.md
+        - cPanel Software: hosting/shared/cpanel-software.md
+        - cPanel Advanced: hosting/shared/cpanel-advanced.md
+        - cPanel Preferences: hosting/shared/cpanel-preferences.md
+        - cPanel Feature Guides:
+          - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
       # --- END SHARED HOSTING: cPanel ---
       # --- BEGIN SHARED HOSTING: Security ---
       - SSL Certificates:

@@ -132,3 +132,114 @@ cPanel will attempt to detect the operating system you are using and provide you
 
 ## FTP Accounts
 
+The FTP Accounts tool allows you to create and manage FTP accounts. When you access the tool, you will see a list of FTP accounts. By default, you will see your main cPanel account's FTP account. You can create additional FTP accounts by clicking the "Add FTP Account" button. You can also delete FTP accounts by clicking the "Delete" button next to the FTP account you wish to delete. Special FTP accounts, like the main cPanel account's FTP account, cannot be deleted. Web Disk accounts will also appear in this list as they are a type of FTP account.
+
+### Create an FTP Account
+
+You can create a FTP account so that you don't have to use your main cPanel account's FTP account. This is useful if you want to give someone access to your account but don't want to give them access to your main cPanel account. You can also create FTP accounts for different directories. This is useful if you want to give someone access to a specific directory but not the entire account.
+
+On the FTP Accounts page, add a log in. This will resemble an email address but it is not an email address. It is just a username. Then enter a password. You can use the password generator to generate a strong password. Then enter the directory you want the FTP account to have access to. If you want the FTP account to have access to the entire account, enter a forward slash (/). Then click the "Create FTP Account" button.
+
+### Delete an FTP Account
+
+You can delete an FTP account by clicking the "Delete" button next to the FTP account you wish to delete. Special FTP accounts, like the main cPanel account's FTP account, cannot be deleted.
+
+## Backup
+
+The Backup tool allows you to create and restore backups of your account. There are several types of backups available in this tool. You can generate a Full Backup, a Home Directory Backup, a MySQL Database Backup, or a Partial Backup. You can also restore backups from this tool.
+
+!!! note
+    Full Account backups are not able to be restored from this tool. If you need to have a full account backup restored, please contact support.
+
+### Full Backup
+
+From the Backup page, click on the "Download a Full Account Backup" button. If a full account backup does not exist, you can generate a full backup. You will need to select a destination for the backup. 
+
+- Home Directory: This will place the full backup in your home directory. You can then download it from the File Manager or via FTP. Keep in mind that this will use up disk space in your account so make sure you have enough space available.
+- Remote FTP Server: This will place the full backup on a remote FTP server. You will need to enter the FTP server's information. You will also need to enter the directory you want the backup to be placed in. You will also need to enter the username and password for the FTP server. You can also enter a port number if the FTP server uses a non-standard port. Keep in mind that this will use up disk space on the FTP server so make sure you have enough space available.
+- Remote FTP Server (Passive Mode Transfer): This will place the full backup on a remote FTP server using passive mode. Passive mode is useful if you are having trouble connecting to the FTP server.
+- Secure Copy (SCP): This will place the full backup on a remote server using SCP. You will need to enter the remote server's information. You will also need to enter the directory you want the backup to be placed in. You will also need to enter the username and password for the remote server. You can also enter a port number if the remote server uses a non-standard port. Keep in mind that this will use up disk space on the remote server so make sure you have enough space available.
+
+!!! note
+    Typically, placing the backup in the home directory is fine as long as you download it and remove it from your account. If you are having trouble downloading the backup, you can place it on a remote FTP server or remote server using SCP.
+
+You can then enter an email address which will receive a notification as soon as the backup is completed. If you don't want to receive a notification, select the "Do not send email notification of backup completion" option. Then click the "Generate Backup" button.
+
+### Home Directory Backup
+
+The home directory backup will download a snapshot of your account's files. This is useful if you want to download a copy of your account's files. You can then use this backup to restore your account's files if they are lost or corrupted. 
+
+#### Home Directory Backup Restore
+
+You can restore this type of backup yourself by uploading the .tar.gz file under the "Restore a Home Directory Backup" heading. Just browse to the location of the file on your local machine and then upload it. Once uploaded, cPanel will automatically process the backup and restore your account's files. 
+
+!!! warning
+    This will overwrite all files in your home directory. If you do not wish to overwrite all files in your home directory, you will need to extract the backup and upload the files you wish to restore manually.
+
+### MySQL Database Backup
+
+The MySQL Database Backup will download a snapshot of the database that you select. You can then use the Restore a MySQL Database Backup tool to restore the database if it is lost or corrupted. You can also use this backup to restore a database with phpMyAdmin.
+
+### Email Forwarders 
+
+You can click on the domain name to download a copy of any email forwarders you have set up. You can then use this backup to restore your email forwarders if they are lost or corrupted. You can also use this backup to restore email forwarders with the Import Forwarders tool.
+
+### Email Filters
+
+You can click on the filter name to download a copy of any filters setup. You can then use this backup to restore your email filters if they are lost or corrupted. You can also use this backup to restore email filters with the Import Filters tool.
+
+## Backup Wizard
+
+This utility is a lot like the Backup tool except that it will ask you a series of questions and then generate a backup based on your answers. This is useful if you are not sure what type of backup you need to generate. It will also allow you to generate a backup of your email forwarders and email filters. It will also help you restore a backup you downloaded.
+
+!!! note
+    The Backup Wizard cannot restore full account backups. If you need to restore a full account backup, please contact support.
+
+## Git Version Control
+
+The Git Version Control tool allows you to create and manage Git repositories. You can create a new repository, import an existing repository, or clone an existing repository. You can also manage existing repositories by renaming them, deleting them, or changing their permissions. This is useful if you want to use Git to manage your website's files. Managing your site with Git is an advanced topic and is out of scope for this documentation. If you need help with this, please contact support.
+
+## JetBackup 5
+
+!!! note
+    JetBackup 5 is a *third-party tool* and may not be available on your plan.
+
+JetBackup 5 is a backup tool that enables the self-service of your backups. You can restore and download backups of your full account, home directory, cron jobs, databases, database users, DNS zones, SSL certificates, Email Accounts, and FTP accounts. 
+
+![JetBackup 5](images/cpanel-files-jetbackup-1.png)
+
+!!! note
+    NodeSpace specifically retains only 15 days of backups. If you need to restore a backup that is older than 15 days, please contact support.
+
+Backups created and managed by JetBackup are based on the schedule that NodeSpace has setup. If you want to create your own full backup on demand, you should use the [Backup tool](#backup).
+
+### Restore a Backup
+
+If you need to restore all or part of your account, you can use either the full account restore or home directory restore. The full account restore will restore all of your account's files, databases, email accounts, and DNS zones. The home directory restore will restore only your account's files.
+
+#### Full Account Restore
+
+To restore your full account, click on the "Full Account Restore" button. You will then be presented with a list of available backups. Select the backup you wish to restore and then click the "Restore" button. You will then be presented with a list of items that can be restored. Select the items you wish to restore and then click the "Restore" button. You also have the option to restore the backup by merging backup data with live account data. If this is enabled, then files that exist in your account already will have their contents merged with the contents from the backup. This may have unintended consequences. If you are unsure, leave this option disabled. When you click on the "Restore" button, the restore process will be placed in queue. You can monitor the progress of the restore by clicking on the "Restore Queue" button.
+
+#### Home Directory Restore
+
+The Home Directory Restore feature will allow you to selectively restore individual files and folders in your account as well as your entire home directory. To restore, click on the "Home Directory Restore" button. You will then be presented with a list of available backups. Select the backup and then click on "Change Files Selection" if you want to selectively restore files and folders. If you click on Change Files Selection, a window will come up that will allow you to select files and folders. Click on the option to Show Hidden Files in order to view files like .htaccess. 
+
+Once you have made your selections, click on the "Restore" button. The restore process will be placed in queue. You can monitor the progress of the restore by clicking on the "Restore Queue" button.
+
+#### Other Restores
+
+You can also restore other items like databases, email accounts, and DNS zones. To restore these items, click on the appropriate button. You will then be presented with a list of available backups. Select the backup and then click on the Restore button. The restore process will be placed in queue. You can monitor the progress of the restore by clicking on the "Restore Queue" button.
+
+!!! note
+    Be careful when performing restores of DNS Zones and certificates. Restoring these items may cause your website to go down. If you are unsure, please contact support. In most cases, it may just be easier to re-add the DNS zone or re-issue the certificate.
+
+### Download a Backup
+
+You can download a backup of your full account, home directory, databases, email accounts, and DNS zones. To download a backup, click on the appropriate button. You will then be presented with a list of available backups. Select the backup and then click on the "Download" button. The backup will then be downloaded to your local machine.
+
+Dowloaded backups will be available for 30 days after they are downloaded. After that, they are deleted permanently.
+
+### Create Backup On Demand
+
+If you need to create a full backup before making changes to your account, you can do so by clicking on the "Create Backup On Demand" button. You will then be presented with a list of items that can be backed up. Select the items you wish to backup and then click the "Create Backup" button. The backup will then be placed in queue. You can monitor the progress of the backup by clicking on the "Backup Queue" button.
