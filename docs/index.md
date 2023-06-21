@@ -7,7 +7,7 @@ Hello and welcome to NodeSpace Learn! This is our new documentation site. Work i
 
 ## Getting Started
 
-If you are new to NodeSpace, we recommend starting with our [Getting Started](/getting-started) guide. This guide will walk you through the basics of getting started with NodeSpace and will help you get your first service up and running.
+If you are new to NodeSpace, we recommend starting with our [Getting Started](/getting-started.md) guide. This guide will walk you through the basics of getting started with NodeSpace and will help you get your first service up and running.
 
 ## Knowledge Base
 

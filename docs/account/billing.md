@@ -1,5 +1,7 @@
 # Billing
 
+Information about our invoicing is available in our [Invoicing](invoicing.md) article.
+
 ## 1. Payment Methods
 
 We accept all major credit cards and PayPal. If you're on an iPhone, iPad, or Mac using Safari, you can also pay with Apple Pay. Payment by check is also available for business accounts based in the United States upon request. We also accept Bitcoin and other cryptocurrencies through BitPay.

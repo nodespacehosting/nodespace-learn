@@ -20,6 +20,7 @@ theme:
     # - content.action.edit
     - content.action.view
     # - toc.integrate
+    - content.tabs.link
   palette:
     scheme: nodespace
 
@@ -41,6 +42,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
   - neoteroi.cards
   - tables
   - attr_list
@@ -70,11 +73,18 @@ nav:
     - Home: index.md
     - Hosting Services: hosting/index.md
     - Account &amp; Billing: account/index.md
+    - Shared Hosting: hosting/shared/overview.md
+    - Reseller Hosting: hosting/reseller/overview.md
+    - WordPress Hosting: hosting/wordpress/overview.md
     - Dedicated &amp; Virtual Servers: servers/overview.md
+  # --- BEGIN ACCOUNT & BILLING ---
   - Account &amp; Billing:
     - Account &amp; Billing: account/index.md
     - Service Cancellation: account/cancellation.md
     - Billing Overview: account/billing.md
+    - Invoicing Overview: account/invoicing.md
+  # --- END ACCOUNT & BILLING ---
+  # --- BEGIN HOSTING SERVICES ---
   - Hosting Services:
     - Overview: hosting/index.md
     - Why we don't offer "Unlimited" plans: hosting/unlimited.md
@@ -86,6 +96,10 @@ nav:
       - How to check your usage: hosting/shared/check-usage.md
       # --- BEGIN SHARED HOSTING: cPanel ---
       - cPanel:
+        - cPanel Overview: hosting/shared/cpanel-overview.md
+        - cPanel Dashboard Overview: hosting/shared/cpanel-dashboard.md
+        - Accessing cPanel: hosting/shared/cpanel-accessing.md
+        - cPanel Email: hosting/shared/cpanel-email.md
         - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
       # --- END SHARED HOSTING: cPanel ---
       # --- BEGIN SHARED HOSTING: Security ---
@@ -99,19 +113,33 @@ nav:
     # --- END SHARED HOSTING ---
     - Reseller Hosting: hosting/reseller/overview.md
     - WordPress Hosting: hosting/wordpress/overview.md
+  # --- END HOSTING SERVICES ---
+  # --- BEGIN DEDICATED & VIRTUAL SERVERS ---
   - Dedicated &amp; Virtual Servers:
     - Overview: servers/overview.md
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Dedicated Servers ---
     - Dedicated Servers: 
       - servers/dedicated/overview.md
       - Provisioning: servers/dedicated/provisioning.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Dedicated Servers ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
     - Virtual Private Servers: 
       - servers/vps/index.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Server Management ---
     - Server Management:
       - servers/management/index.md
+      - Connect with SSH: servers/management/ssh-connection.md
       - servers/management/vps.md
+      - servers/management/os-reload.md
+      - servers/management/no-bandwidth-graphs.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Server Management ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Networking ---
     - Networking:
       - servers/networking/public.md
       - servers/networking/private.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Networking ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Operating Systems ---
     - Operating Systems: 
       - servers/operating_systems.md
       - servers/operating_systems/almalinux.md
@@ -128,6 +156,7 @@ nav:
       - servers/operating_systems/rocky_linux.md
       - servers/operating_systems/ubuntu.md
       - servers/operating_systems/windows.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Operating Systems ---
   - Contributing:
     - Contributing Overview: contributing/index.md
     - Documentation Standards: contributing/standards.md
