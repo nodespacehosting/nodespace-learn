@@ -100,6 +100,8 @@ nav:
         - cPanel Dashboard Overview: hosting/shared/cpanel-dashboard.md
         - Accessing cPanel: hosting/shared/cpanel-accessing.md
         - cPanel Email: hosting/shared/cpanel-email.md
+        - cPanel Billing &amp; Support: hosting/shared/cpanel-billing.md
+        - cPanel Files: hosting/shared/cpanel-files.md
         - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
       # --- END SHARED HOSTING: cPanel ---
       # --- BEGIN SHARED HOSTING: Security ---

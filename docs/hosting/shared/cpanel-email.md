@@ -198,7 +198,9 @@ It's important that if you make any list public, not only can members of the gen
 !!! warning 
     Mailing list public archives may violate privacy laws such as GDPR. Use with caution.
 
-## Delivery Reports
+## Track Delivery
+
+The Track Delivery function allows you to see if an email was delivered or not. This is useful for troubleshooting email delivery issues. This will give you an Email Deliverability Report.
 
 !!! note
     This is a helpful troubleshooting tool you can use to determine if an email message was delivered or not.
@@ -229,3 +231,186 @@ These work similarly to Global Email Filters except they apply only to the email
 
 ![Email Filters](images/cpanel-email-filters-2.png)
 
+## Email Deliverability
+
+!!! note
+    This is different from the Track Delivery feature.
+
+![Email Deliverability](images/cpanel-email-deliverablity-1.png)
+
+This feature will check and allow you to update your SPF and DKIM DNS records. This is important for ensuring your email is delivered and not marked as spam. If you use an external DNS service like Cloudflare, this is where you will get the records to add to your DNS. 
+
+## Address Importer
+
+The Address Importer allows you to import email addresses and passwords from other email providers. This is useful if you're migrating from another email provider. It also allows you to quickly on-board a large number of email accounts. 
+
+### Importing Email Addresses
+
+To import CSV/XLS files, certain data must be provided. You must provide the field "Email Address" and optionally "Domain", "Password", and "Quota". 
+
+Example:
+
+![Example CSV/XLS File](images/cpanel-email-importer-1.png)
+
+* [Download an example XLS file](resources/example_email.xls)
+* [Download an example CSV file](resources/example_email.csv)
+
+### Importing Email Forwarders
+
+You must provide the source and destination email addresses in the fields "Email" and "Forward To", respectively.
+
+Example:
+
+![Example CSV/XLS File](images/cpanel-email-importer-2.png)
+
+* [Download an example XLS file](resources/example_fwd.xls)
+* [Download an example CSV file](resources/example_fwd.csv)
+
+!!! note
+    These example files can also be found within the cPanel interface.
+
+## Spam Filters
+
+Spam Filters allow you to control how spam is handled. You can set the spam score threshold and how spam is handled. You can also whitelist and blacklist email addresses and domains.
+
+![Spam Filters](images/cpanel-email-spam-filters-1.png)
+
+The spam filtering is powered by SpamAssassin. SpamAssassin is a powerful spam filtering tool that uses a variety of methods to determine if an email is spam or not. It uses a scoring system to determine if an email is spam or not. The higher the score, the more likely it is spam. For additional guidance, you can read the [SpamAssassin documentation](https://spamassassin.apache.org/). SpamAssassin is a very powerful tool and can be customized to your needs. The default cPanel configuration is a good starting point and will work for most users.
+
+### Overview
+
+The Overview tab gives you a quick overview of the current configuration. You can also enable or disable SpamAssassin from this tab.
+
+!!! note
+    It's not recommended to disable SpamAssassin.
+
+By default, "Move New Spam to a Separate Folder (Spam Box)" is enabled. This will move any emails that are marked as spam to a folder called "spam" in your email account. You can access this folder via webmail or an email client. You can also enable "Automatically Delete New Spam (Auto-Delete Spam)" to automatically delete any emails marked as spam. This is not recommended as it can result in false positives and legitimate emails being deleted.
+
+### Spam Box Settings
+
+![Spam Box Settings](images/cpanel-email-spam-filters-2.png)
+
+This tab allows you to configure how the spam folder is handled. You can enable or disable the spam folder. The system will automatically send messages that have a spam score of 5 or higher to the spam folder. 
+
+!!! note
+    You can configure the spam score threshold on the Score tab.
+
+You can also use this itnterface to clear the spam folder for the main email account. You can also empty the spam folder for all email accounts. 
+
+### Auto-Delete Settings
+
+![Auto-Delete Settings](images/cpanel-email-spam-filters-3.png)
+
+This tab allows you to configure how spam is handled. You can enable or disable the auto-delete feature. If enabled, any emails that have a spam score of 5 or higher will be automatically deleted. This is not recommended as it can result in false positives and legitimate emails being deleted. However, if you do wish to enable it, we recommend using a higher threshold such as 10 or 15 as the likelihood of false positives is lower.
+
+### Additional Configuration (Advanced)
+
+This section contains advanced configuration options. You should not need to change any of these settings. If you do, please contact technical support for assistance or read the [SpamAssassin documentation](https://spamassassin.apache.org/). Misconfiguration of these settings can result in false positives and legitimate emails being marked as spam or legitimate emails not being received by your users.
+
+!!! warning "Inclusivity language"
+    The following section contains language that may be considered offensive. This language is used in the SpamAssassin documentation and is not our own. Projects like SpamAssassin are open source and we do not control the language used in the documentation and many are working to change this language. We are working to change this language in our documentation as well. We use the language in the documentation to ensure accuracy and to avoid confusion. As the language is updated, we will update it here. We apologize for any offense this may cause. Please read our [Diversity & Inclusion Statement](../../diversity.md) for more information.
+
+#### Whitelist
+
+Email addresses and domains listed here will not be marked as spam. You can add email addresses and domains to the whitelist by clicking the "Add A New "whitelist_from" Item" button. You can also add email addresses and domains to the whitelist by clicking the "Configure SpamAssassin" button on the Overview tab.
+
+#### Blacklist
+
+Email addresses and domains listed here will be marked as spam. You can add email addresses and domains to the blacklist by clicking the "Add A New "blacklist_from" Item" button. You can also add email addresses and domains to the blacklist by clicking the "Configure SpamAssassin" button on the Overview tab.
+
+#### Calculate Spam Score
+
+This option allows you to change or add values to spam scoring.
+
+![Calculate Spam Score](images/cpanel-email-spam-filters-4.png)
+
+!!! warning
+    This section may contain offensive language. If you are not comfortable reading this language, please contact support for assistance.
+
+## Encryption
+
+The Encryption interface allows you to manage GnuPG encryption keys for your email accounts. GnuPG is a free and open-source implementation of the OpenPGP standard. It allows you to encrypt and sign your email messages. The encryption works by generating both a private and public key. The public key is typically uploaded to public key servers or shared with others. The private key is kept secret and is used by you to decrypt messages sent to you or verify the messages received if they are signed.
+
+### Generate a New Key
+
+!!! note
+    If you plan on using the webmail interface only and not using an email client, you can use this tool to create a GnuPG key pair. If you plan on using an email client, you should generate a key locally on your computer and import it. You can also import an existing key pair if you already have one.
+
+When you generate a new key, you will need to provide your name, email address, a comment or nickname, a key passphrase for the private key, an expiration date of the public key (which this can be extended without generating a new key unlike SSL certificates), and the key size. The larger the key size, the more secure it is. However, larger keys take longer to generate and use more resources. We recommend using a key size of 2048 or 4096. 2048 is the default and is still considered secure. Never generate a key size less than 2048.
+
+![Generate a New Key](images/cpanel-email-encryption-1.png)
+
+### Import a Key
+
+If you already have a key, you can import it. You will need to provide the key and the passphrase for the key. You can generate a key locally on your computer using a tool like [GPG Suite](https://gpgtools.org/) or [GnuPG](https://gnupg.org/). If you plan on using an existing key and not using the webmail interface, you do not need to upload a key. You can simply continue using the key locally on your computer's email client.
+
+## BoxTrapper
+
+!!! warning
+    The BoxTrapper interface is not recommended for most users. It is not recommended to enable BoxTrapper unless you are familiar with it and understand how it works. It can result in legitimate emails being blocked and not delivered to your users. It can also result in legitimate emails being delayed. If you do not understand how BoxTrapper works, please do not enable it. It can also result in your domain being added to blocklists.
+
+!!! note
+    You should probably use the [Spam Filters](#spam-filters) interface instead of BoxTrapper. It is much easier to use and does not have the same issues as BoxTrapper.
+
+BoxTrapper is an email verification system that requires anyone who sends you an email to verify that they are a real person and not a spammer. When someone sends you an email, they will receive an email asking them to verify that they are a real person. They will need to click a link in the email to verify that they are a real person. Once they verify, their email will be delivered to your inbox. If they do not verify, their email will be deleted after a set period of time. You can also whitelist email addresses and domains so that they are not required to verify.
+
+You can already probably see the problem with this system. While it may seem like a good idea, it can result in legitimate emails being blocked or delayed. It can also result in your domain being added to blocklists. This is because it can confuse senders and they may end up marking your email as spam or blocking your domain. It can also result in legitimate emails being delayed as the sender may not see the verification email or may not understand it. It can also result in legitimate emails being deleted if the sender does not verify within the set period of time.
+
+### Enable BoxTrapper
+
+To enable BoxTrapper, click the "Manage" button next to the email account you wish to enable it for. Then click the "Enable" button.
+
+![Enable BoxTrapper](images/cpanel-email-boxtrapper-1.png)
+
+### Configure BoxTrapper
+
+Once enabled, you can configure BoxTrapper by clicking the "Manage" button next to the email account you wish to configure it for. You can then configure the settings for BoxTrapper. There are several main options:
+
+![Configure BoxTrapper](images/cpanel-email-boxtrapper-2.png)
+
+- Configure Settings
+- Edit Confirmation Messages
+- Edit White/Black/Ignore Lists
+- Forward List
+- Review Log
+- Review Queue
+
+#### Configure Settings
+
+The Configure Settings section allows you to set email addresses for the account. For example, if the account has alias addresses, they can be added here. You can then add Your Name so that the confirmation email messages are personalized. Further, you can adjust the number of days you wish to keep logs and messages in the queue and configure the minimum Apache SpamAssassin score required to bypass BoxTrapper.
+
+!!! warning
+    It's never a good idea to reply to spam messages. But setting the minimum score can help ensure that fully legtimate email never sees the BoxTrapper system.
+
+You can also enable automatic whitelisting and choose to automatically whitelist the *To* and *From* lines from whitelisted senders ("whitelist by association").
+
+#### Edit Confirmation Messages
+
+BoxTrapper has several messages that are sent to senders. You can edit these messages here. You can also edit the subject line of the messages.
+
+- blacklist - This message is sent to senders who are blacklisted.
+- returnverify - This message is sent in reply to a verification request and did not contain the verification code.
+- verifyrelease - This message is sent in reply to a verification request and contained the verification code and the sender is then added to the whitelist.
+- verify - This message is sent when a sender is not on the whitelist and they send an email to the account. It contains a verification code that the sender must click to verify that they are a real person.
+
+#### Edit White/Black/Ignore Lists
+
+You can edit the white, black, and ignore lists here. You can add email addresses and domains to the lists. You can also remove email addresses and domains from the lists. You can use Perl-formatted regular expressions to match email addresses and domains. For example, you can use `subject I Love You` to match all email messages with the subject "I Love You". You can use `from .+\@example\.com` to match all email messages from the example.com domain.
+
+#### Forward List
+
+The Forward List is a list of email addresses to which whitelisted and verified email should be sent, in addition to the address BoxTrapper is protecting. For example, if you have a support email address that is protected by BoxTrapper, you can add your personal email address to the Forward List so that you receive the emails as well.
+
+#### Review Log
+
+The Review Log shows all of the emails that have been sent to the account and their status displayed by day. You can see if they were verified, whitelisted, blacklisted, or ignored. You can also see if they were deleted or forwarded. You can also see the date and time the email was received and the date and time the email was deleted or forwarded.
+
+#### Review Queue
+
+The Review Queue shows all of the emails that are currently in the queue. You can see the sender, subject, date and time received, and the date and time the email will be deleted if it is not verified. You can also see the status of the email. You can also delete emails from the queue as well as whitelist and deliver them automatically. This is useful for emails that you know are legitimate and do not want to wait for the sender to verify or are sent from an automated system that cannot verify.
+
+## Email Disk Usage
+
+The Email Disk Usage interface allows you to see how much disk space each email account is using. You can also see how much disk space each folder is using. This can help you determine which email accounts and folders are using the most disk space. You can then delete emails from those accounts and folders to free up disk space.
+
+![Email Disk Usage](images/cpanel-email-disk-usage-1.png)

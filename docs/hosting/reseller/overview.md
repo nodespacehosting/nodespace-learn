@@ -45,3 +45,7 @@ Reseller hosting works by allowing the account owner to create sub-accounts that
   image: images/wordpress.png
 
 ::/cards::
+
+## Reseller Hosting Guides
+
+If you need help with any of the features of our reseller hosting, please see our [shared hosting guides](../shared/overview.md) as our reseller hosting includes all of the features of our shared hosting. The only difference is that our shared hosting is branded to NodeSpace and our reseller hosting can be branded to your brand.
