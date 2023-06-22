@@ -2,6 +2,37 @@
 
 You can cancel your account at any time by logging into the My NodeSpace customer portal and clicking on the "Request Cancellation" link under the "Actions" menu for the service you want to cancel. You can also contact our billing team by opening a support ticket from the [NodeSpace Client Portal](https://my.nodespace.com). For security reasons, we cannot accept cancellation requests by email. They must be submitted through the NodeSpace Client Portal.
 
+## How to Cancel Your Service
+
+!!! note
+    If you have multiple services you want to cancel, you will need to cancel each service individually. You cannot cancel multiple services at the same time.
+
+To cancel your service, please follow these steps:
+
+First, login to the [NodeSpace Client Portal](https://my.nodespace.com). From the Services menu, click on My Services.
+
+![My Services](images/my-services.png)
+
+Next, select the service that you want to cancel. 
+
+![Select Service](images/website-service.png)
+
+Next, click on the "Request Cancellation" link under the "Actions" menu.
+
+![Request Cancellation](images/request-cancellation-1.png)
+
+If the service does not have a "Request Cancellation" link under the "Actions" menu, there is an alternative location which is on the main service page, right under the service icon as indicated here:
+
+![Request Cancellation](images/request-cancellation-2.png)
+
+!!! warning
+    IMPORTANT: If your product or service does not have a request cancellation button, you must open a billing ticket to request cancellation. Cancellation tickets must be received at least 24 hours prior to service due date in order to cancel.
+
+You will be prompted with a form to say why you're cancelling. While it is optional, please include a reason for your cancellation to better help us improve our services.
+
+!!! warning "Cancel PayPal Subscription Payments"
+    Please cancel any PayPal subscriptions you may have after cancelling your service with us. If you do not cancel your subscription, PayPal will continue to bill you! **We do not offer refunds for PayPal subscriptions that are not cancelled.**
+
 ## Cancellation Types
 
 We offer two types of cancellations: immediate cancellation and end of billing period cancellation. If you choose immediate cancellation, your service will be terminated immediately and you will not be billed again. If you choose end of billing period cancellation, your service will remain active until the end of your current billing period and you will not be billed again. If you choose end of billing period cancellation, you will still be able to access your service until the end of your current billing period.

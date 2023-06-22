@@ -82,7 +82,10 @@ nav:
     - Account &amp; Billing: account/index.md
     - Service Cancellation: account/cancellation.md
     - Billing Overview: account/billing.md
+    - Billing Extensions: account/billing-extensions.md
     - Invoicing Overview: account/invoicing.md
+    - Service Transfers: account/account-transfers.md
+    - Refunds: account/refunds.md
   # --- END ACCOUNT & BILLING ---
   # --- BEGIN HOSTING SERVICES ---
   - Hosting Services:
