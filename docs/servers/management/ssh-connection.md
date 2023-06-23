@@ -33,31 +33,34 @@ If you have a Linux server, you can connect to it using SSH. SSH is a secure pro
     macOS includes an SSH client by default. You can connect to your server by following these steps:
 
     1. Open the Terminal application.
-    ![macOS Terminal](images/ssh-macos-1.png)
+    ![macOS Terminal](images/macos-ssh-1.png)
     2. Enter the following command, replacing `username` with your username and `server` with your server's IP address:
         ```
         ssh username@server
         ```
     3. Press enter.
     4. You will be prompted to accept the SSH key fingerprint. Type `yes` and press enter to continue.
-    ![macOS SSH Key Fingerprint](images/ssh-macos-2.png)
+    ![macOS SSH Key Fingerprint](images/macos-ssh-2.png)
     5. Next, you will be prompted to enter your password. Enter your password and press enter. You will not see your password as you type it.
-        ![macOS Password](images/ssh-macos-3.png)
+        ![macOS Password](images/macos-ssh-3.png)
     6. You should now be connected to your server.
 
 === "Using Linux"
     Linux includes an SSH client by default. You can connect to your server by following these steps:
 
     1. Open the Terminal application.
+    ![Linux Terminal](images/linux-ssh-1.png)
     2. Enter the following command, replacing `username` with your username and `server` with your server's IP address:
     ```
         ssh username@server
         ```
     3. Press enter.
     4. You will be prompted to accept the SSH key fingerprint. Type `yes` and press enter to continue.
+    ![Linux SSH Key Fingerprint](images/linux-ssh-2.png)
     5. Next, you will be prompted to enter your password. Enter your password and press enter. You will not see your password as you type it.
 
     You should now be connected to your server.
+    ![Linux Connected](images/linux-ssh-3.png)
 
 === "Using iOS"
     You can connect to your server using an SSH client on iOS. We recommend using [Termius](https://termius.com/). You can download Termius from the [App Store](https://apps.apple.com/us/app/termius-ssh-client/id549039908).
