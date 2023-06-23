@@ -52,3 +52,7 @@ This process will take a while and you may be asked if you want to keep your cur
 If you're asked about `/etc/lvm/lvm.conf`, you should select to install the package mantainer's version. 
 
 Once the process is complete, you should then run the `pve7to8` check again to make sure everything was upgraded. You should receive only two warnings after an upgrade. These warnings typically just mean that the server needs to be rebooted. If you receive any other warnings, please contact support for assistance.
+
+## References
+
+- [Proxmox VE 8 Upgrade Notes](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8)

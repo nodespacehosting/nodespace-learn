@@ -21,6 +21,9 @@ theme:
     - content.action.view
     # - toc.integrate
     - content.tabs.link
+    - navigation.tracking
+    - navigation.instant
+    - content.code.copy
   palette:
     scheme: nodespace
 
@@ -170,6 +173,25 @@ nav:
       - servers/operating_systems/ubuntu.md
       - servers/operating_systems/windows.md
     # --- END DEDICATED & VIRTUAL SERVERS: Operating Systems ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox ---
+    - Proxmox:
+      - servers/proxmox/index.md
+      - Proxmox VE:
+        - servers/proxmox/pve/index.md
+        - Guides:
+          - servers/proxmox/pve/guide/index.md
+          - servers/proxmox/pve/guide/use-single-ip.md
+          - servers/proxmox/pve/guide/securing-with-firewall.md
+          - servers/proxmox/pve/guide/ansible.md
+        - servers/proxmox/pve/networking.md
+        - servers/proxmox/pve/upgrade-7-to-8.md
+        # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
+        - Solutions:
+          - servers/proxmox/pve/solutions/rhel9-kernel-panic.md
+        # --- END DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
+      - servers/proxmox/pbs/index.md
+      - servers/proxmox/pmg/index.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Proxmox ---
   - Contributing:
     - Contributing Overview: contributing/index.md
     - Documentation Standards: contributing/standards.md
