@@ -23,6 +23,7 @@ theme:
     - content.tabs.link
     - navigation.tracking
     - navigation.instant
+    - announce.dismiss
     - content.code.copy
   palette:
     scheme: nodespace
