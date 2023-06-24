@@ -9,4 +9,4 @@ Build and Upload:
         - mkdocs build
         # - cp -rT web-server-files site
         # - lftp -e "set ssl:verify-certificate no; open 199.255.159.165; user $FTP_USERNAME,$FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
-        - sshpass -p "${FTP_PASSWORD}" rsync -a --delete -e ssh ${FTP_USERNAME}@learn.nodespace.com:~/public_html/ site/
+        - sshpass -p "${FTP_PASSWORD}" rsync -a --delete -e ssh -o StrictHostKeyChecking=no ${FTP_USERNAME}@learn.nodespace.com:~/public_html/ site/
