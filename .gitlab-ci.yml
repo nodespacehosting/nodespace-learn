@@ -1,5 +1,4 @@
-#image: tnewton1/mkdocs-build:v1
-image: tnewton1:v1
+image: tnewton1/mkdocs-build:v1
 
 stages:
   - deploy
