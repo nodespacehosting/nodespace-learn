@@ -10,6 +10,8 @@ The Email section lets you manage all tools related to email with your account.
 
 Email Accounts lets you add, remove, and restrict email accounts from within your account. By default, your account will have a system account. This `<cpanel username>@<domain>` account also doubles as a catchall email account by default. 
 
+![Default Email](images/cpanel-email-default-address-1.png)
+
 !!! note
     We recommend that you disable the catchall account as it can quickly use up your disk space. You can disable the catchall account by clicking on the "Manage" button next to the account and then clicking on the "Disable" button.
 
@@ -123,11 +125,7 @@ The Autoresponders function allows you to setup an automatic reply on an email a
 
 To create an autoresponder, click on the Add Autoresponder button.
 
-![Create an Autoresponder](images/cpanel-email-autoresponders-2.png)
-
 Enter the email address you want to setup the autoresponder for. You can also select a domain if you have more than one domain on your account.
-
-![Create an Autoresponder](images/cpanel-email-autoresponders-3.png)
 
 Enter the From, Subject, and Body of the autoresponder. You can use the following variables in the body of the autoresponder:
 
@@ -147,8 +145,6 @@ You can also select the start and stop time for the autoresponder. This is usefu
 
 The Default Address option works as the catchall address in cPanel. If the system receives an email for your domain and a forwarder or mailbox doesn't exist for the email, then the message will be delivered to the default address. By default, this is your cPanel's username at your primary domain name. You may want to disable this functionality or change the default address to a person or shared mailbox like info@example.com.
 
-![Default Address](images/cpanel-email-default-address-1.png)
-
 This mailbox can easily fill up and is one of the main contributors to running out of disk space in your account. You should check this account or delete email from it often.
 
 !!! warning
@@ -161,11 +157,8 @@ This mailbox can easily fill up and is one of the main contributors to running o
 
 To change the default address, click on the Change button.
 
-![Change the Default Address](images/cpanel-email-default-address-2.png)
-
 Select the option you want to use for the default address. You can also select the Discard option to discard the email.
 
-![Change the Default Address](images/cpanel-email-default-address-3.png)
 
 ## Mailing Lists
 
@@ -250,8 +243,6 @@ To import CSV/XLS files, certain data must be provided. You must provide the fie
 
 Example:
 
-![Example CSV/XLS File](images/cpanel-email-importer-1.png)
-
 * [Download an example XLS file](resources/example_email.xls)
 * [Download an example CSV file](resources/example_email.csv)
 
@@ -261,7 +252,7 @@ You must provide the source and destination email addresses in the fields "Email
 
 Example:
 
-![Example CSV/XLS File](images/cpanel-email-importer-2.png)
+![Example CSV/XLS File](images/cpanel-email-importer-2.jpg)
 
 * [Download an example XLS file](resources/example_fwd.xls)
 * [Download an example CSV file](resources/example_fwd.csv)

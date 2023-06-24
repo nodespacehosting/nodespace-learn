@@ -170,6 +170,7 @@ nav:
       - servers/operating_systems/proxmox.md
       - servers/operating_systems/proxmox/proxmox-backup-server.md
       - servers/operating_systems/proxmox/proxmox-mail-gateway.md
+      - servers/operating_systems/rhel.md
       - servers/operating_systems/rocky_linux.md
       - servers/operating_systems/ubuntu.md
       - servers/operating_systems/windows.md

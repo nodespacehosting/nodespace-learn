@@ -131,6 +131,6 @@ CentOS uses SELinux to provide an additional layer of security. SELinux is enabl
 * [AlmaLinux](almalinux.md)
 * [Debian](debian.md)
 * [Fedora](fedora.md)
-* [Rocky Linux](rockylinux.md)
+* [Rocky Linux](rocky_linux.md)
 * [Ubuntu](ubuntu.md)
 

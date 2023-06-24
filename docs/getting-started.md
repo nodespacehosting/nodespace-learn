@@ -33,9 +33,9 @@ Here are some guides to help you get started with your service:
 
 * [Shared Hosting](hosting/shared/overview.md)
 * [Reseller Hosting](hosting/reseller/overview.md)
-* [Virtual Private Servers](vps/overview.md)
-* [Dedicated Servers](dedicated/overview.md)
+* [Virtual Private Servers](servers/vps/index.md)
+* [Dedicated Servers](servers/dedicated/overview.md)
 * [Domains](domains/overview.md)
-* [SSL Certificates](ssl/overview.md)
+* [SSL Certificates](hosting/shared/ssl/how-ssl-works.md)
 * [Email](email/overview.md)
 

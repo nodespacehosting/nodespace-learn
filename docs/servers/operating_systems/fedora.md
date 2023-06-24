@@ -62,7 +62,7 @@ systemctl enable httpd
 
 ## Next Steps
 
-Now that you have a better understanding of Fedora, you may be interested in learning more about [AlmaLinux](almalinux.md), [Rocky Linux](rocky_linux.md), [Debian](../debian.md) or [Ubuntu](../ubuntu.md).
+Now that you have a better understanding of Fedora, you may be interested in learning more about [AlmaLinux](almalinux.md), [Rocky Linux](rocky_linux.md), [Debian](debian.md) or [Ubuntu](ubuntu.md).
 
 ## Additional Information
 
