@@ -8,4 +8,4 @@ Build and Upload:
     script:
         - mkdocs build
         # - cp -rT web-server-files site
-        - lftp -e "set ssl:verify-certificate no; open learn.nodespace.com; -u $FTP_USERNAME, $FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
+        - lftp -e "set ssl:verify-certificate no; open learn.nodespace.com; --user $FTP_USERNAME, $FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
