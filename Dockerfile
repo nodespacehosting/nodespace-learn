@@ -9,8 +9,7 @@ RUN \
   python3 \
   python3-dev \
   py3-pip \
-  rsync \
-  sshpass \
+  lftp \
   build-base && \
   pip install --upgrade pip && \
   pip install mkdocs && \
@@ -22,6 +21,7 @@ RUN \
   pip install mkdocs-git-revision-date-localized-plugin && \
   pip install mkdocs-windmill-dark && \
   pip install pip install neoteroi-mkdocs && \
+  pip install mkdocs-git-revision-date-localized-plugin && \
   rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
 CMD ["sh", "-c", "tail -f /dev/null"]
