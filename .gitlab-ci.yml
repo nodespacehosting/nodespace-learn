@@ -7,5 +7,6 @@ Build and Upload:
     stage: deploy
     script:
         - mkdocs build
+        - lftp --version
         # - cp -rT web-server-files site
         - lftp -e "set ssl:verify-certificate no; open learn.nodespace.com; user $FTP_USERNAME $FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
