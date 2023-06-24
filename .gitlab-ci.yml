@@ -9,4 +9,4 @@ Build and Upload:
         - mkdocs build
         - lftp --version
         # - cp -rT web-server-files site
-        - lftp -e "set ssl:verify-certificate no; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye" -u $FTP_USERNAME,$FTP_PASSWORD learn.nodespace.com
+        - lftp -e "set ssl:verify-certificate no; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye" -u nslearn,$FTP_PASSWORD learn.nodespace.com
