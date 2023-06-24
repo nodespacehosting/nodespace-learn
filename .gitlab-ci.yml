@@ -9,5 +9,5 @@ Build and Upload:
         - mkdocs build
         # - cp -rT web-server-files site
         # - lftp -e "set ssl:verify-certificate no; open 199.255.159.165; user $FTP_USERNAME,$FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
-        - sshpass -p "${FTP_PASSWORD}" ssh ${FTP_USERNAME}@199.255.159.165 "sh -c 'rm -rf /path/to/the/directory/*'"
+        - sshpass -p "${FTP_PASSWORD}" ssh $FTP_USERNAME@199.255.159.165 "sh -c 'rm -rf public_html/*'"
         - sshpass -p "${FTP_PASSWORD}" scp --delete -o StrictHostKeyChecking=no site/ ${FTP_USERNAME}@199.255.159.165:public_html/
