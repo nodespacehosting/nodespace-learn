@@ -5,6 +5,9 @@ stages:
 
 Build and Upload:
     stage: deploy
+    only:
+      - develop
+      - main
     script:
         - mkdocs build
         - lftp --version
