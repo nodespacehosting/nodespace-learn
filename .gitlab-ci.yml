@@ -8,5 +8,4 @@ Build and Upload:
     script:
         - mkdocs build
         # - cp -rT web-server-files site
-        - lftp -e "set ssl:verify-certificate no; open 199.255.159.165; user $FTP_USERNAME $FTP_PASSWORD; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
-
+        - lftp -u $FTP_USERNAME,$FTP_PASSWORD -e "set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye"
