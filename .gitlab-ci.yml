@@ -1,0 +1,12 @@
+image: tnewton1/mkdocs-build:v1
+
+stages:
+  - deploy
+
+Build and Upload:
+    stage: deploy
+    script:
+        - mkdocs build
+        - lftp --version
+        # - cp -rT web-server-files site
+        - lftp -e "set ssl:verify-certificate no; set ftp:list-options -a; mirror --reverse --verbose --delete site/ public_html/; bye" -u nslearn,$FTP_PASSWORD learn.nodespace.com
