@@ -10,6 +10,7 @@ Build and Upload:
         - apt update
         - apt upgrade -y
         - apt install lftp -y
+        - apt install python3 -y
         - pip3 install --upgrade pip
         - pip3 install mkdocs
         - pip3 install mkdocs-material
