@@ -160,6 +160,7 @@ nav:
     - Networking:
       - servers/networking/public.md
       - servers/networking/private.md
+      - servers/networking/limitations.md
     # --- END DEDICATED & VIRTUAL SERVERS: Networking ---
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Operating Systems ---
     - Operating Systems: 
