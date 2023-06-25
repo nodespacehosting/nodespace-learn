@@ -1,6 +1,6 @@
 # Virtualmin
 
-![Virtualmin](images/virtualmin-logo.png)){ align=right style="width: 150px; margin: 0 0 10px 10px;" }
+![Virtualmin](images/virtualmin-logo.png){ align=right style="width: 150px; margin: 0 0 10px 10px;" }
 
 Virtualmin is a powerful and flexible web hosting control panel for Linux and BSD systems. Available in an Open Source community-supported version, and a more feature-filled version with premium support, Virtualmin is the cost-effective and comprehensive solution to virtual web hosting management. With Virtualmin, you can manage users, domains, email, databases, and much more.
 
