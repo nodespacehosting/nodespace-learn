@@ -155,6 +155,7 @@ nav:
     - Control Panels:
       - servers/control-panels.md
       - cPanel: servers/control-panels/cpanel.md
+      - Virtualmin: servers/control-panels/virtualmin.md
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Networking ---
     - Networking:
       - servers/networking/public.md
