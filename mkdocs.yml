@@ -151,6 +151,10 @@ nav:
       - servers/management/os-reload.md
       - servers/management/no-bandwidth-graphs.md
     # --- END DEDICATED & VIRTUAL SERVERS: Server Management ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Control Panels ---
+    - Control Panels:
+      - servers/control-panels.md
+      - cPanel: servers/control-panels/cpanel.md
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Networking ---
     - Networking:
       - servers/networking/public.md
