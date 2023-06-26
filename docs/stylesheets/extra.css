@@ -1,0 +1,12 @@
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+[data-md-color-scheme="nodespace"] {
+  --md-primary-fg-color:        #1D2F49;
+  --md-primary-fg-color--light: #1D2F49;
+  --md-primary-fg-color--dark:  #0C1429;
+  --md-default-fg-color--light: #1D2F49;
+}

@@ -1,0 +1,38 @@
+# Why don't you offer unlimited hosting?
+
+This is a common question we get and there's a good reason behind it! "Unlimited" is a dishonest marketing gimmick designed to make you think that you're getting a really good deal when you're not. Please read this article and consider if any of this is true about your current provider or one you're considering.
+
+## The limits of unlimited storage
+
+First, there's no storage device in the universe capable of "unlimited" storage. Try to order a computer with unlimited storage from Dell, Apple, Acer, HP - or ask Western Digital, Seagate, or Samsung if they have a drive with unlimited storage. It doesn't exist. Some hosting providers say that they use SAN storage and so they can "keep adding disks". While you can keep adding disks to SAN storage to keep expanding it, you still cannot have a SAN with "unlimited" storage. It gets prohibitively expensive. Even major companies don't have "unlimited" storage on their SAN. Typically, you'll find up to 100 terabytes of storage. Eventually, the SAN controller will hit a disk limit.
+
+Check the Terms of Service or Acceptable Use Policy for the limits. You'll typically see that you can't use this storage for backups or file sharing, but they'll say that the disk space you use must be dedicated to your website and files on your website. As an example, let's say you're a professional photographer. You have an event and you upload a zip file of a client's photos. This zip file is 4GB. You then forget about this file because you have "unlimited" disk space. You do another event and upload another zip file that is 5GB in size and then forget about this file. After all, there's no quota! You're now consuming 9GB of disk space. However, your host scans the server and notices two large zip files. It looks like you're using this for backups. So they suspend your account for a TOS violation. Your website is down, clients can't access your work, you're losing valuable leads, and your hosting company's support team doesn't want to unsuspend your account until it's been reviewed. Eventually, your account gets restored, but another scan reveals more archived files and your account gets suspended again - or even worse, terminated due to multiple TOS violations. This is why unlimited disk space is a terrible thing! We've seen (and saved) many customers who have been penalized for normal use before. 
+
+This is why we have a disk quota. You're paying for the space, so you're allowed to use it as you would like. If you have 60 GB of disk space and decide to have 20 GB of your clients' photos on it, that is up to you! You can then delete older files as you need to make room - or contact us, and we'll assist you with a more long-term archival storage. The point being, you're never penalized for using disk space since you're paying for it.
+
+Another common tactic of "unlimited" storage is by implementing an inode limit. What's an inode? It's a pointer to a file on a disk. To simplify, 1 inode is equal to 1 file or folder in your account. If your hosting provider says you have unlimited disk space but 200,000 inodes, you can have 200,000 files in your account - but take special note! Each hosting account comes with a framework for storing things like log files, emails, cache, etc. and these can use around 500 to 2000 inodes before you've even uploaded anything! Once you upload your site and start using it, especially if you're using a caching plugin, you'll start to see your inode usage go up. Even a moderately sized WordPress site can use 150,000 to 200,000 inodes. So much for "unlimited" disk space, right? Even if you're using ~4 GB of storage, which is reasonable, you might not be able to upload files until you free some inodes.
+
+In other cases, there are hosting providers that will limit disk space and inodes. So you'll pay for 10 GB of disk space, but be given 200,000 inodes. What happens if you reach your inode limit? New files won't be allowed to be created until some are deleted. So if you're using a caching plugin, your visitors could encounter a broken website. NodeSpace does not implement inode limits.
+
+## The limits of unlimited bandwidth
+
+The rules of disk usage do not apply to bandwidth. Bandwidth is also commonly called data transfer. To understand this, say you have a 1 GB file on your website. If 1 person downloads this file, you will have used 1 GB of your monthly allotment. If 100 people download this file, you will have used 100 GB of your monthly allotment. Just like how hosting providers with unlimited disk space will hide in their TOS the true limits to using disk space, unlimited bandwidth can sometimes be the same way. For example, they may throttle the speeds. Yes, the server is on a gigabit port, but that doesn't mean it will actually transmit at 1 Gbps. It may be throttled down to 12 Mbps (100 MB/s). They may also have limits hidden like after 100 GB, you're only allowed 1 GB per hour or other crazy limitation.
+
+!!! info
+    If a server is pulling a steady stream of about 30 Mbps, it will utilize 10 TB of bandwidth by the end of the month.
+
+Unlimited bandwidth isn't necessarily a bad thing, but there can be some hidden limits. Keep in mind that cloud providers like AWS, Azure, and Google all have bandwidth charges on their networks for internet traffic.
+
+## How our quotas work
+
+We designed our quotas after years of experience. The average hosting account, we found, uses around 4-9 GB so we designed our hosting plans around this. Additionally, we use soft quotas. A soft quota means that even if your plan offers 10 GB of disk space, you can use 12 GB. Or 13 GB. We will bill you for those additional gigabytes used. Using 13 GB on a plan with 10 GB will result in a $1 overage charge (only $0.50 per gigabyte). In comparison, a hard quota will cause issues if you reach it - emails will not be sent or received, databases will not be written to, and your website could completely crash. This is avoided with soft quotas. It also gives you an opportunity to clean up your account of unused files. We do not implement inode limits either as running out of inodes can be just as catastrophic to your website.
+
+??? question "What is a soft quota vs a hard quota?"
+    **Soft quota**: You can use more than your plan's quota, but you will be billed for the overage. This is the type of quota we use on all of our services. There is a hard cap on shared hosting accounts that is 40% over the advertised quota. This is to prevent abuse and surprise bills. If you need more disk space or bandwidth, we can add it to your account. 
+    
+    **Hard quota**: You cannot use more than your plan's quota. If you do, your account will not allow data to be written until you remove files to get under the quota - this can also include databases and emails. This is the type of quota that is used on most providers.
+
+When it comes to bandwidth, it's again a soft quota. If your plan comes with 1 TB but you utilize 1.02 TB of bandwidth, you'll be billed $1 for those 2 GB over ($0.50 per gigabyte). Providers that use hard quotas will actually take your website offline if you exceed the limit. We also do not limit on speed or utilize any sort of throttling. You pay for your bandwidth, you're allowed to use it.
+Questions?
+
+We hope this clarified things - however, if you'd like more information or even a special price for additional resource limits, we can build you a custom plan! Please contact our sales team for assistance.

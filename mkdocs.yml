@@ -1,22 +1,208 @@
 site_name: NodeSpace Learn
-
-nav:
-  - Learn Home: index.md
+site_description: NodeSpace Learn is a collection of guides and tutorials for NodeSpace customers.
+site_author: NodeSpace Technologies, LLC
+site_url: https://learn.nodespace.com
+use_directory_urls: false
+repo_url: https://github.com/nodespacehosting/nodespace-learn
+edit_uri: blob/main/docs/
+copyright: "Copyright &copy; NodeSpace Technologies, LLC"
 
 theme:
   name: material
-  logo: img/nodespace-learn.png
+  custom_dir: overrides
+  logo: assets/nodespace-learn-preview.png
+  font:
+    text: 'Red Hat Text'
+    code: 'Red Hat Mono'
   features:
     - navigation.tabs
-    - navigation.expand
     - navigation.top
-    - toc.integrate
+    # - content.action.edit
+    - content.action.view
+    # - toc.integrate
+    - content.tabs.link
+    - navigation.tracking
+    - navigation.instant
+    - announce.dismiss
+    - content.code.copy
   palette:
-    primary: indigo
-    accent: amber
+    scheme: nodespace
+
+extra_css:
+  - stylesheets/neoteroi-mkdocs.css
+  - stylesheets/extra.css
+
+plugins: 
+  - search
+
 
 markdown_extensions:
   - toc:
       baselevel: 4
       permalink: true
   - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
+  - neoteroi.cards
+  - tables
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://nodespace.social/@nodespace
+      name: nodespace on Mastodon
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nodespace
+      name: nodespace on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/nodespacehosting
+      name: nodespace on GitHub
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/nodespacetech
+      name: nodespace on Facebook
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/nodespace
+      name: nodespace on LinkedIn
+
+nav:
+  - NodeSpace Home: https://www.nodespace.com
+  - Learn Home:
+    - Home: index.md
+    - Hosting Services: hosting/index.md
+    - Account &amp; Billing: account/index.md
+    - Shared Hosting: hosting/shared/overview.md
+    - Reseller Hosting: hosting/reseller/overview.md
+    - WordPress Hosting: hosting/wordpress/overview.md
+    - Dedicated &amp; Virtual Servers: servers/overview.md
+  # --- BEGIN ACCOUNT & BILLING ---
+  - Account &amp; Billing:
+    - Account &amp; Billing: account/index.md
+    - Service Cancellation: account/cancellation.md
+    - Billing Overview: account/billing.md
+    - Billing Extension: account/billing-extension.md
+    - Invoicing Overview: account/invoicing.md
+    - Service Transfers: account/account-transfers.md
+    - Refunds: account/refunds.md
+  # --- END ACCOUNT & BILLING ---
+  # --- BEGIN HOSTING SERVICES ---
+  - Hosting Services:
+    - Overview: hosting/index.md
+    - Why we don't offer "Unlimited" plans: hosting/unlimited.md
+    # --- BEGIN SHARED HOSTING ---
+    - Shared Hosting: 
+      - Shared Hosting Overview: hosting/shared/overview.md
+      - Frequently Asked Questions: hosting/shared/faq.md
+      # --- BEGIN SHARED HOSTING: Account Management ---
+      - How to check your usage: hosting/shared/check-usage.md
+      # --- BEGIN SHARED HOSTING: cPanel ---
+      - cPanel:
+        - cPanel Overview: hosting/shared/cpanel-overview.md
+        - cPanel Dashboard Overview: hosting/shared/cpanel-dashboard.md
+        - Accessing cPanel: hosting/shared/cpanel-accessing.md
+        - cPanel Email: hosting/shared/cpanel-email.md
+        - cPanel Billing &amp; Support: hosting/shared/cpanel-billing.md
+        - cPanel Files: hosting/shared/cpanel-files.md
+        - cPanel Databases: hosting/shared/cpanel-databases.md
+        - cPanel Domains: hosting/shared/cpanel-domains.md
+        - cPanel Metrics: hosting/shared/cpanel-metrics.md
+        - cPanel Security: hosting/shared/cpanel-security.md
+        - cPanel Software: hosting/shared/cpanel-software.md
+        - cPanel Advanced: hosting/shared/cpanel-advanced.md
+        - cPanel Preferences: hosting/shared/cpanel-preferences.md
+        - cPanel Feature Guides:
+          - MultiPHP vs PHP Selector: hosting/multiphp-vs-php-selector.md
+      # --- END SHARED HOSTING: cPanel ---
+      # --- BEGIN SHARED HOSTING: Security ---
+      - SSL Certificates:
+        - How SSL certificates work: hosting/shared/ssl/how-ssl-works.md
+        - How multi-year SSL certificates work: hosting/shared/ssl/multi-year.md
+        - Free SSL Certificates: hosting/shared/ssl/free.md
+      # --- END SHARED HOSTING: Security ---
+      - Website Transfers:
+        - hosting/shared/self-transfer.md
+    # --- END SHARED HOSTING ---
+    - Reseller Hosting: hosting/reseller/overview.md
+    - WordPress Hosting: hosting/wordpress/overview.md
+  # --- END HOSTING SERVICES ---
+  # --- BEGIN DEDICATED & VIRTUAL SERVERS ---
+  - Dedicated &amp; Virtual Servers:
+    - Overview: servers/overview.md
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Dedicated Servers ---
+    - Dedicated Servers: 
+      - servers/dedicated/overview.md
+      - Provisioning: servers/dedicated/provisioning.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Dedicated Servers ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
+    - Virtual Private Servers: 
+      - servers/vps/index.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Server Management ---
+    - Server Management:
+      - servers/management/index.md
+      - Connect with SSH: servers/management/ssh-connection.md
+      - servers/management/vps.md
+      - servers/management/os-reload.md
+      - servers/management/no-bandwidth-graphs.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Server Management ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Control Panels ---
+    - Control Panels:
+      - servers/control-panels.md
+      - cPanel: servers/control-panels/cpanel.md
+      - Virtualmin: servers/control-panels/virtualmin.md
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Networking ---
+    - Networking:
+      - servers/networking/public.md
+      - servers/networking/private.md
+      - servers/networking/limitations.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Networking ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Operating Systems ---
+    - Operating Systems: 
+      - servers/operating_systems.md
+      - servers/operating_systems/almalinux.md
+      - servers/operating_systems/centos.md
+      - servers/operating_systems/cloudlinux.md
+      - servers/operating_systems/debian.md
+      - servers/operating_systems/fedora.md
+      - servers/operating_systems/freebsd.md
+      - servers/operating_systems/opensuse.md
+      - servers/operating_systems/openvz.md
+      - servers/operating_systems/proxmox.md
+      - servers/operating_systems/proxmox/proxmox-backup-server.md
+      - servers/operating_systems/proxmox/proxmox-mail-gateway.md
+      - servers/operating_systems/rhel.md
+      - servers/operating_systems/rocky_linux.md
+      - servers/operating_systems/ubuntu.md
+      - servers/operating_systems/windows.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Operating Systems ---
+    # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox ---
+    - Proxmox:
+      - servers/proxmox/index.md
+      - Proxmox VE:
+        - servers/proxmox/pve/index.md
+        - Guides:
+          - servers/proxmox/pve/guide/index.md
+          - servers/proxmox/pve/guide/use-single-ip.md
+          - servers/proxmox/pve/guide/securing-with-firewall.md
+          - servers/proxmox/pve/guide/ansible.md
+        - servers/proxmox/pve/networking.md
+        - servers/proxmox/pve/upgrade-7-to-8.md
+        # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
+        - Solutions:
+          - servers/proxmox/pve/solutions/rhel9-kernel-panic.md
+        # --- END DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
+      - servers/proxmox/pbs/index.md
+      - servers/proxmox/pmg/index.md
+    # --- END DEDICATED & VIRTUAL SERVERS: Proxmox ---
+  - Contributing:
+    - Contributing Overview: contributing/index.md
+    - Documentation Standards: contributing/standards.md
+
+
+      
