@@ -10,6 +10,6 @@ TODO: Add contributing guide.
 
 Copyright (C) 2023 NodeSpace Technologies, LLC.
 
-![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt this work as long as you give appropriate credit, do not use this work for commercial purposes, and distribute your contributions under the same license.
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). You are free to share and adapt this work as long as you give appropriate credit and distribute your contributions under the same license.
