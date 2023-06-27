@@ -72,15 +72,17 @@ extra:
       name: nodespace on LinkedIn
 
 nav:
-  - NodeSpace Home: https://www.nodespace.com
+  - NodeSpace: https://www.nodespace.com
   - Learn Home:
     - Home: index.md
+    - Getting Started: getting-started.md
     - Hosting Services: hosting/index.md
     - Account &amp; Billing: account/index.md
     - Shared Hosting: hosting/shared/overview.md
     - Reseller Hosting: hosting/reseller/overview.md
     - WordPress Hosting: hosting/wordpress/overview.md
     - Dedicated &amp; Virtual Servers: servers/overview.md
+    - Diversity Statement: diversity.md
   # --- BEGIN ACCOUNT & BILLING ---
   - Account &amp; Billing:
     - Account &amp; Billing: account/index.md
@@ -142,12 +144,14 @@ nav:
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
     - Virtual Private Servers: 
       - servers/vps/index.md
+      - servers/vps/managing.md
     # --- END DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Server Management ---
     - Server Management:
       - servers/management/index.md
       - Connect with SSH: servers/management/ssh-connection.md
       - servers/management/vps.md
+      - servers/management/ipmi.md
       - servers/management/os-reload.md
       - servers/management/no-bandwidth-graphs.md
     # --- END DEDICATED & VIRTUAL SERVERS: Server Management ---
@@ -186,8 +190,9 @@ nav:
       - servers/proxmox/index.md
       - Proxmox VE:
         - servers/proxmox/pve/index.md
+        - Admin Manuals: servers/proxmox/pve/guides.md
         - Guides:
-          - servers/proxmox/pve/guide/index.md
+          - servers/proxmox/pve/guide/sdn-vxlan.md
           - servers/proxmox/pve/guide/use-single-ip.md
           - servers/proxmox/pve/guide/securing-with-firewall.md
           - servers/proxmox/pve/guide/ansible.md
@@ -198,9 +203,17 @@ nav:
           - servers/proxmox/pve/solutions/rhel9-kernel-panic.md
         # --- END DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
       - servers/proxmox/pbs/index.md
-      - servers/proxmox/pmg/index.md
+      - Proxmox Mail Gateway:
+        - servers/proxmox/pmg/index.md
+        - Settings &amp; Config:
+          - servers/proxmox/pmg/mail-filter.md
+          - servers/proxmox/pmg/configuration.md
+          - servers/proxmox/pmg/administration.md
+          - servers/proxmox/pmg/statistics.md
     # --- END DEDICATED & VIRTUAL SERVERS: Proxmox ---
   # --- END DEDICATED & VIRTUAL SERVERS ---
+  - Email:
+    - email/overview.md
   # --- BEGIN DOMAINS ---
   - Domains:
     - Overview: domains/overview.md

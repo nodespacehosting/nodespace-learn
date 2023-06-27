@@ -40,3 +40,19 @@ By default, PMG will create a few rules for you. These rules are:
 
 Remember, these are defaults and can be modified or removed as needed. They can also aid you in developing your own rules. 
 
+## Create a Rule
+
+Creating a rule is a multi-step process.
+
+1. On the **Rules** page, click on the **Add** button. Give your rule a name, priority, set the direction of mail flow this rule should apply to, and if it should be enabled or not.
+
+2. In the far right pane, build your rule using the objects. At minimum, every rule needs at least an Action Object and a Who or What rule.
+
+!!! note
+    If you don't see an Object, you can create the object under the appropriate category for the Object you're trying to create.
+
+3. Save the rule and test.
+
+## Enable/Disable a Rule
+
+If you need to disable a rule, click on the toggle icon on the far right of the rule list, next to the pencil icon. To enable the rule, click the toggle again.
