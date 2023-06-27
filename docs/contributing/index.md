@@ -83,4 +83,4 @@ Make sure you have the `site` directory in your `.gitignore` file. This will pre
 
 ## Contribution License
 
-Our documentation is licensed under BY-NC-SA 4.0. This means that you can use our documentation for non-commercial purposes as long as you give us credit and share your changes under the same license. You can read more about this license [here](https://creativecommons.org/licenses/by-nc-sa/4.0/). By contributing, you agree to make your contributions available under this license.
+Our documentation is licensed under CC-BY-SA 4.0. This means that you can use our documentation as long as you give us credit and share your changes under the same license. You can read more about this license [here](https://creativecommons.org/licenses/by-sa/4.0/). By contributing, you agree to make your contributions available under this license.
