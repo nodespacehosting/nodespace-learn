@@ -2,72 +2,9 @@
 
 In order to maintain a consistent look and feel across our documentation, we have created this document to outline our standards. This document is a work in progress and will be updated as needed.
 
-## Table of Contents
-
-- [Documentation Standards](#documentation-standards)
-  - [Table of Contents](#table-of-contents)
-  - [File Structure](#file-structure)
-  - [Front Matter](#front-matter)
-  - [Page Content](#page-content)
-  - [Code Blocks](#code-blocks)
-  - [Images](#images)
-  - [Links](#links)
-  - [Tables](#tables)
-  - [Notes](#notes)
-  - [Warnings](#warnings)
-  - [Tips](#tips)
-  - [Important](#important)
-  - [Questions](#questions)
-  - [Contributing](#contributing)
-  - [License](#license)
-
 ## File Structure
 
-The file structure for the documentation is as follows:
-
-```
-.contributing/ - Contains templates that you can use to get started.
-docs/ - Contains the documentation files. All of the documentation files are located in this directory.
-├─ assets/ - Contains the assets for the site such as logos (Do not edit these files).
-└─ images/ - Contains images for top-level pages.
-stylesheets/ - Contains the stylesheets for the site (Do not edit these files).
-overrides/ - Contains overrides for the mkdocs theme (Do not edit these files).
-mkdocs.yml - Contains the configuration for the mkdocs site.
-```
-
-Content is laid out in the `/docs` directory and each subject has a similar structure:
-
-```
-docs/
-├─ subject/
-├── topic/ - Use a directory if the topic has multiple pages.
-├── topic.md - The main page for the topic.
-└─ images - Contains images for the topic.
-```
-
-If a subject is further nested, the structure is the same, but with an additional level:
-
-```
-docs/
-├─ subject/
-├─ topic/
-├─── subtopic/ - Use a directory if the subtopic has multiple pages.
-├──── /images - Contains images for the subtopic.
-├─── subtopic.md - The main page for the subtopic.
-├─── /images - Contains images for the topic.
-└── topic.md - The main page for the topic.
-```
-
-You can continue to nest topics as needed, but try to keep the nesting to a minimum. It is recommended that you do not nest more than 3 levels deep. This is because the URL structure will begin to get very long and it will be difficult to navigate the site. For example, a page nested 3 levels deep would have a URL similar to the following:
-
-```
-https://learn.nodespace.com/subject/topic/subtopic/subsubtopic
-```
-
-## Front Matter
-
-!!! note
-    This is not used.
+Please see the main [contributing guide](index.md) for information about the file structure.
 
 ## Page Content
 
@@ -77,7 +14,10 @@ The page content is to be written in markdown. The markdown should be formatted 
 - Use H2 for the main sections of the page.
 - Use H3-H6 for sub-sections of the page.
 
-The file name should be lowercase and use hyphens to separate words. For example, `getting-started.md`. The file name will also become the URL for the page. For example, `https://learn.nodespace.com/getting-started`.
+The file name should be lowercase and use hyphens to separate words. For example, `getting-started.md`. The file name will also become the URL for the page. For example, `https://learn.nodespace.com/getting-started.html`.
+
+!!! note
+    We have the `use_directory_urls: false` option set in the `mkdocs.yml` file. This means that the URL for the page will be the file name. For example, `https://learn.nodespace.com/getting-started.html`. For pages in folders, it makes things work logically. For example, `proxmox/pve/networking.md` would generate `https://learn.nodespace.com/proxmox/pve/networking.html` instead of `proxmox/pve/networking/`. This is to make things easier to work with.
 
 If there are sub-pages for a topic, the main page should be named `index.md`. For example, `docs/getting-started/index.md`. The sub-pages should be named using the same guidelines as above. For example, `docs/getting-started/creating-an-account.md`.
 
