@@ -10,7 +10,7 @@ copyright: "Copyright &copy; NodeSpace Technologies, LLC"
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/nodespace-learn-preview.png
+  logo: assets/nodespace-learn.png
   font:
     text: 'Red Hat Text'
     code: 'Red Hat Mono'
@@ -200,9 +200,21 @@ nav:
       - servers/proxmox/pbs/index.md
       - servers/proxmox/pmg/index.md
     # --- END DEDICATED & VIRTUAL SERVERS: Proxmox ---
+  # --- END DEDICATED & VIRTUAL SERVERS ---
+  # --- BEGIN DOMAINS ---
+  - Domains:
+    - Overview: domains/overview.md
+    - Register a Domain: domains/register.md
+    - Transferring to NodeSpace: domains/transferring.md
+    - Transfering Out: domains/transfering-out.md
+  # --- END DOMAINS ---
+  # --- BEGIN CONTRIBUTING ---
   - Contributing:
     - Contributing Overview: contributing/index.md
-    - Documentation Standards: contributing/standards.md
+    - First Time Contributor's Guide: contributing/first-time.md
+    - Style Guide: contributing/style-guide.md
+    - Formatting Guide: contributing/docs-formatting.md
+  # --- END CONTRIBUTING ---
 
 
       

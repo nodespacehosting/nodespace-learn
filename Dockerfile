@@ -22,6 +22,8 @@ RUN \
   pip install mkdocs-windmill-dark && \
   pip install pip install neoteroi-mkdocs && \
   pip install mkdocs-git-revision-date-localized-plugin && \
+  pip install mkdocs-redirects && \
+  pip install mkdocs-awesome-pages-plugin && \
   rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
 CMD ["sh", "-c", "tail -f /dev/null"]
