@@ -214,6 +214,7 @@ nav:
   # --- END DEDICATED & VIRTUAL SERVERS ---
   - Email:
     - email/overview.md
+    - email/troubleshooting.md
   # --- BEGIN DOMAINS ---
   - Domains:
     - Overview: domains/overview.md

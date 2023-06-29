@@ -1,27 +1,6 @@
-# Email Hosting
+# Email 
 
-NodeSpace offers two main types of email hosting - first, the email hosting that comes with [shared hosting](hosting/shared/cpanel-email.md) and professional email hosting. Professional email hosting is available as an add-on to any service. Professional email hosting includes a variety of features, including:
+## Email Hosting
 
-* 25GB of storage per mailbox
-* Webmail
-* IMAP/POP3/SMTP
-* ActiveSync
-* Calendar
-* Contacts
-* Tasks
-* Notes
-* File Storage
-* Collaboration
-* Encryption
-* Archiving
-* Spam Filtering
-* Virus Scanning
-* Email Forwarding
-* Email Aliases
-* Email Groups
-* Email Lists
-* Email Autoresponders
-* And more.
+NodeSpace offers two main types of email hosting - first, the email hosting that comes with [shared hosting](hosting/shared/cpanel-email.md) and professional email hosting. Professional email hosting is available as an add-on to any service. Professional email hosting offers redundant email servers, advanced spam filtering, and more. You can also run your own email server on a [VPS](vps/overview.md) or [dedicated server](dedicated/overview.md).
 
-!!! note
-    This section is still being written and will have more information soon.
