@@ -76,7 +76,7 @@ nav:
   - Learn Home:
     - Home: index.md
     - Getting Started: getting-started.md
-    - Hosting Services: hosting/index.md
+    - Web Hosting: hosting/index.md
     - Account &amp; Billing: account/index.md
     - Shared Hosting: hosting/shared/overview.md
     - Reseller Hosting: hosting/reseller/overview.md
@@ -94,7 +94,7 @@ nav:
     - Refunds: account/refunds.md
   # --- END ACCOUNT & BILLING ---
   # --- BEGIN HOSTING SERVICES ---
-  - Hosting Services:
+  - Web Hosting:
     - Overview: hosting/index.md
     - Why we don't offer "Unlimited" plans: hosting/unlimited.md
     # --- BEGIN SHARED HOSTING ---
