@@ -2,6 +2,9 @@
 
 Proxmox Mail Gateway is an open-source mail gateway that protects your mail server against all email threats the moment they emerge. The full featured mail proxy can be easily deployed between the firewall and your internal mail server in only a few minutes. It is based on Debian Buster and comes with a web-based management interface.
 
+!!! warning "Problematic Language"
+    This section contains and uses [problematic language](../../../diversity.md#erradicating-problematic-language). This langauge is uses in our documentation as this is how it is referenced in the product itself. As projects remove problematic langauge, our documentation will be updated to reflect the change.
+
 ## Getting Started
 
 Proxmox Mail Gateway, once installed and configured, is a very strong email filter and SMTP relay. PMG is designed to sit between the Internet and your mail server on an internal network. PMG can also act as your MX, providing inbound spam and virus filtering before sending email to a cloud email provider such as Office 365 or Google Workspace (Gmail). 
