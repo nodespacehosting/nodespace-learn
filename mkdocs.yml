@@ -70,6 +70,8 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/nodespace
       name: nodespace on LinkedIn
+#  analytics:
+#    provider: custom
 
 nav:
   - NodeSpace: https://www.nodespace.com
