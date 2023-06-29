@@ -1,3 +1,9 @@
+---
+title: NodeSpace Learn
+hide:
+    - toc
+---
+
 # Welcome to NodeSpace Learn
 
 !!! note "We're still building this documentation out!"
