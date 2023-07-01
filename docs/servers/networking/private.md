@@ -13,18 +13,18 @@ These services are available on the following IPs and domains:
 
 | Service | IP Address | Domain |
 | ------- | ---------- | ------ |
-| DNS     | 10.X.X.X   | N/A    |
-| DNS 2   | 10.X.X.X   | N/A    |
-| NTP     | 10.X.X.X   | ntp.services.nodespace.com |
-| Windows Update | 10.X.X.X | windowsupdate.services.nodespace.com |
-| AlmaLinux Update | 10.X.X.X | almalinux.services.nodespace.com |
-| Ubuntu Update | 10.X.X.X | ubuntu.services.nodespace.com |
-| CentOS Update | 10.X.X.X | centos.services.nodespace.com |
-| Debian Update | 10.X.X.X | debian.services.nodespace.com |
-| Rocky Linux Update | 10.X.X.X | rocky.services.nodespace.com |
-| Fedora Update | 10.X.X.X | fedora.services.nodespace.com |
-| OpenSUSE Update | 10.X.X.X | opensuse.services.nodespace.com |
-| EPEL | 10.X.X.X | epel.services.nodespace.com |
+| DNS     | 10.200.15.200   | intlnrdns1.service.nodespace.com    |
+| DNS 2   | 10.200.16.200   | intlnrdns2.service.nodespace.com    |
+| NTP     | 10.200.15.200 10.200.16.200   | time.service.nodespace.com |
+| Windows Update | 10.X.X.X | windowsupdate.service.nodespace.com |
+| AlmaLinux Update | 10.X.X.X | almalinux.service.nodespace.com |
+| Ubuntu Update | 10.X.X.X | ubuntu.service.nodespace.com |
+| CentOS Update | 10.X.X.X | centos.service.nodespace.com |
+| Debian Update | 10.X.X.X | debian.service.nodespace.com |
+| Rocky Linux Update | 10.X.X.X | rocky.service.nodespace.com |
+| Fedora Update | 10.X.X.X | fedora.service.nodespace.com |
+| OpenSUSE Update | 10.X.X.X | opensuse.service.nodespace.com |
+| EPEL | 10.X.X.X | epel.service.nodespace.com |
 
 !!! note
     Some services may not be available in all data center locations.
@@ -32,4 +32,3 @@ These services are available on the following IPs and domains:
 ## Private IP Addresses
 
 By default, clients are issued a /29 subnet with 5 usable IP addresses. If you need additional IP addresses or a larger subnet, one can be issued upon request.
-
