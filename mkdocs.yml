@@ -109,6 +109,11 @@ nav:
       - Frequently Asked Questions: hosting/shared/faq.md
       # --- BEGIN SHARED HOSTING: Account Management ---
       - How to check your usage: hosting/shared/check-usage.md
+      # --- END SHARED HOSTING: Account Management ---
+      # --- BEGIN SHARED HOSTING: MySQL ---
+      - MySQL Databases:
+        - MySQL Overview: hosting/shared/mysql/index.md
+        - phpMyAdmin: hosting/shared/mysql/phpmyadmin.md
       # --- BEGIN SHARED HOSTING: cPanel ---
       - cPanel:
         - cPanel Overview: hosting/shared/cpanel-overview.md
