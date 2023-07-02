@@ -11,6 +11,7 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/nodespace-learn.png
+  favicon: assets/nodespace_152.png
   font:
     text: 'Red Hat Text'
     code: 'Red Hat Mono'
@@ -25,6 +26,9 @@ theme:
     - navigation.instant
     - announce.dismiss
     - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
   palette:
     scheme: nodespace
 
