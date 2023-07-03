@@ -141,7 +141,16 @@ nav:
       - Website Transfers:
         - hosting/shared/self-transfer.md
     # --- END SHARED HOSTING ---
-    - Reseller Hosting: hosting/reseller/overview.md
+    # --- BEGIN RESELLER HOSTING ---
+    - Reseller Hosting:
+      - Reseller Hosting Overview: hosting/reseller/overview.md
+      # --- BEGIN RESELLER HOSTING: WHM for Resellers ---
+      - WHM for Resellers:
+        - WHM Overview: hosting/reseller/whm/index.md
+        - Account Information:
+          - List Accounts: hosting/reseller/whm/list-accounts.md
+      # --- END RESELLER HOSTING: WHM for Resellers ---
+    # --- END RESELLER HOSTING ---
     - WordPress Hosting: hosting/wordpress/overview.md
   # --- END HOSTING SERVICES ---
   # --- BEGIN DEDICATED & VIRTUAL SERVERS ---
