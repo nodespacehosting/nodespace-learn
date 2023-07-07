@@ -4,7 +4,7 @@ hide:
     - toc
 ---
 
-NodeSpace offers Proxmox Virtual Environment (PVE), Proxmox Backup Server (PBS), and Proxmox Mail Gateway (PMG) on our platform. This section covers each of these products in detail for our platform.
+NodeSpace offers [Proxmox Virtual Environment (PVE)](https://www.nodespace.com/servers/proxmox/), [Proxmox Backup Server (PBS)](https://www.nodespace.com/servers/proxmox/#backup), and [Proxmox Mail Gateway (PMG)](https://www.nodespace.com/servers/proxmox/#mail) on our platform. This section covers each of these products in detail for our platform.
 
 <a href="pve/upgrade-7-to-8.html"><img src="images/proxmox-8-upgrade.png"></a>
 
