@@ -185,6 +185,7 @@ nav:
       - servers/networking/public.md
       - servers/networking/private.md
       - servers/networking/limitations.md
+      - RDNS (Reverse DNS): servers/networking/public.html#rdns-reverse-dns
     # --- END DEDICATED & VIRTUAL SERVERS: Networking ---
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Operating Systems ---
     - Operating Systems: 
