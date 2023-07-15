@@ -1,3 +1,5 @@
+2023-07-14
+- FIXED: [#204](https://bugzilla.nodespace.com/show_bug.cgi?id=204) - Adjusted "forward-confirmed" language in RDNS documentation
 2023-07-13
 - ADDED: [#204](https://bugzilla.nodespace.com/show_bug.cgi?id=204) - Add documentation for RDNS
 
