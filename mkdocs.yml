@@ -165,6 +165,7 @@ nav:
     - Virtual Private Servers: 
       - servers/vps/index.md
       - servers/vps/managing.md
+      - OpenVZ VPS: servers/vps/openvz/index.md
     # --- END DEDICATED & VIRTUAL SERVERS: Virtual Private Servers ---
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Server Management ---
     - Server Management:
