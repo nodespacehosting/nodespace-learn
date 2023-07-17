@@ -9,7 +9,7 @@
 
 2. Scroll down the service page and you will see "WordPress" right above the "Quick Shortcuts" section. Fill out the fields and click "Install".
     
-        ![WordPress Install](images/wSbAmOXdaz.png)
+    ![WordPress Install](images/wSbAmOXdaz.png)
 
 3. You can then access your WordPress installation by navigating to the URL that you specified in the "Install Directory" field. For example, if you specified "blog" as the install directory, you would navigate to `https://example.com/blog`. If you want to access the WordPress admin panel, you would navigate to `https://example.com/blog/wp-admin`. To install WordPress in the root directory, leave the "Install Directory" field blank.
 
