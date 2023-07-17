@@ -12,8 +12,8 @@ This section contains helpful guides and examples for software that we may not f
   image: images/wordpress.png
 
 - title: Proxmox
-    content: Helpful guides for Proxmox.
-    link: proxmox/index.md
-    image: images/proxmox.png
+  content: Helpful guides for Proxmox.
+  link: proxmox/index.md
+  image: images/proxmox.png
 
 ::/cards::

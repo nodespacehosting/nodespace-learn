@@ -245,6 +245,15 @@ nav:
     - Transferring to NodeSpace: domains/transferring.md
     - Transfering Out: domains/transfering-out.md
   # --- END DOMAINS ---
+  # --- BEGIN GUIDES ---
+  - Guides:
+    - guides/index.md
+    - WordPress:
+      - guides/wordpress/index.md
+      - guides/wordpress/install-wordpress-on-cpanel.md
+    - Proxmox:
+      - guides/proxmox/index.md
+  # -- END GUIDES ---
   # --- BEGIN CONTRIBUTING ---
   - Contributing:
     - Contributing Overview: contributing/index.md
