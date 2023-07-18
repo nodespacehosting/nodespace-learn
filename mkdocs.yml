@@ -224,7 +224,9 @@ nav:
         - Solutions:
           - servers/proxmox/pve/solutions/rhel9-kernel-panic.md
         # --- END DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
-      - servers/proxmox/pbs/index.md
+      - Proxmox Backup Server:
+        - Overview: servers/proxmox/pbs/index.md
+        - New Server Setup: servers/proxmox/pbs/new-server.md
       - Proxmox Mail Gateway:
         - servers/proxmox/pmg/index.md
         - Settings &amp; Config:
