@@ -1,6 +1,7 @@
 2023-07-20
 - ADDED: [#214](https://bugzilla.nodespace.com/show_bug.cgi?id=214) - Added reseller hosting migration documentation
 - ENHANCEMENT: [#217](https://bugzill.nodespace.com/show_bug.cgi?id=217) - Changed "Learn" to "Docs". learn.nodespace.com will still be an alias for docs.nodespace.com for the time being.
+- FIXED: [#223](https://bugzilla.nodespace.com/show_bug.cgi?id=226) - Fixed link to RDNS docs in OpenVZ documentation.
 
 2023-07-14
 - FIXED: [#204](https://bugzilla.nodespace.com/show_bug.cgi?id=204) - Adjusted "forward-confirmed" language in RDNS documentation

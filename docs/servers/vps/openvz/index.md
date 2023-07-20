@@ -100,7 +100,7 @@ Additional IP addresses are available on all OpenVZ VPSs. Additional IP addresse
 
 ### RDNS (Reverse DNS)
 
-Currently there is no self-service RDNS (Reverse DNS) available for OpenVZ VPSs. If you need RDNS, please open a support ticket. Please make sure you have forward DNS setup for the IP address before requesting RDNS. Please see our [RDNS documentation](../networking/public.md#rdns-reverse-dns) for more information as this policy applies to all of our services.
+Currently there is no self-service RDNS (Reverse DNS) available for OpenVZ VPSs. If you need RDNS, please open a support ticket. Please make sure you have forward DNS setup for the IP address before requesting RDNS. Please see our [RDNS documentation](../../networking/public.md#rdns-reverse-dns) for more information as this policy applies to all of our services.
 
 ## Control Panel
 
