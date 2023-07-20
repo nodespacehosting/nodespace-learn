@@ -2,7 +2,9 @@
 
 ![AlmaLinux](../images/oslogos/almalinux.png){ align=right style="width: 150px; margin: 0 0 10px 10px;" }
 
-AlmaLinux is a community-driven, 1:1 binary compatible fork of Red Hat Enterprise Linux (RHEL)® 8. It is a free and open-source Linux distribution built from the source code of Red Hat Enterprise Linux (RHEL). AlmaLinux is designed to be a drop-in replacement for RHEL and is built by the creators of the established CloudLinux OS.
+AlmaLinux is a community-driven, Application Binary Interface (ABI) Compatible fork of Red Hat Enterprise Linux (RHEL)® 8 and 9. It is a free and open-source Linux distribution derived from the source code of Red Hat Enterprise Linux (RHEL). AlmaLinux is designed to be a drop-in replacement for RHEL and is built by the creators of the established CloudLinux OS.
+
+As of July 2023, AlmaLinux is now "ABI Compatible" and not "1:1 bug compatible" with RHEL. This means that AlmaLinux is not a 1:1 clone of RHEL, but it is designed so that software built for AlmaLinux will work on RHEL and software built for RHEL should work on AlmaLinux. However, there may be some differences in the way that AlmaLinux handles certain things and may have some bugs that are not present in RHEL and vice versa.
 
 ## What versions of AlmaLinux are available?
 
