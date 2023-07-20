@@ -1,7 +1,7 @@
-site_name: NodeSpace Learn
-site_description: NodeSpace Learn is a collection of guides and tutorials for NodeSpace customers.
+site_name: NodeSpace Docs
+site_description: NodeSpace Docs is a collection of knowledge, guides, and tutorials for NodeSpace customers.
 site_author: NodeSpace Technologies, LLC
-site_url: https://learn.nodespace.com
+site_url: https://docs.nodespace.com
 use_directory_urls: false
 repo_url: https://github.com/nodespacehosting/nodespace-learn
 edit_uri: blob/main/docs/
@@ -79,7 +79,7 @@ extra:
 
 nav:
   - NodeSpace: https://www.nodespace.com
-  - Learn Home:
+  - Docs Home:
     - Home: index.md
     - Getting Started: getting-started.md
     - Web Hosting: hosting/index.md

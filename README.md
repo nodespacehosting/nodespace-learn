@@ -1,10 +1,10 @@
-# NodeSpace Learn
+# NodeSpace Docs
 
 This is our new documentation site. Work is in progress! The NodeSpace Learn site is built using [mkdocs](https://www.mkdocs.org/), [mkdocs-material](https://squidfunk.github.io/mkdocs-material/), and various extensions and plugins for mkdocs. We decided to use mkdocs because it is a simple, yet powerful static site generator that allows us to write documentation in markdown and easily deploy it to our website. This means that we could open up our documentation to the community and allow them to contribute to it. After all, we are a community-driven company and believers in open source! 
 
 ## Contributing
 
-TODO: Add contributing guide.
+Contributions from the community are welcome! Whether they are guides, tutorials, or just a simple typo fix, we appreciate any and all contributions. If you would like to contribute to our documentation, please read our [Contributing Guide](docs/contributing/index.md) for more information and how to get started.
 
 ## Copyright and License
 
