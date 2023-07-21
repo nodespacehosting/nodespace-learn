@@ -251,6 +251,9 @@ nav:
   # --- BEGIN GUIDES ---
   - Guides:
     - guides/index.md
+    - Docker:
+      - guides/docker/index.md
+      - guides/docker/install-docker-docker-compose-almalinux.md
     - WordPress:
       - guides/wordpress/index.md
       - guides/wordpress/install-wordpress-on-cpanel.md
