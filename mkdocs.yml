@@ -62,9 +62,9 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://nodespace.social/@nodespace
       name: nodespace on Mastodon
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/nodespace
-      name: nodespace on Twitter
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@nodespacehosting
+      name: NodeSpace Hosting on YouTube
     - icon: fontawesome/brands/github
       link: https://github.com/nodespacehosting
       name: nodespace on GitHub
