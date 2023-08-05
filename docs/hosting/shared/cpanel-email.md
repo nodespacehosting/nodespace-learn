@@ -139,8 +139,6 @@ Enter the From, Subject, and Body of the autoresponder. You can use the followin
 
 You can also select the start and stop time for the autoresponder. This is useful if you want to setup an autoresponder for a vacation or out of office.
 
-![Create an Autoresponder](images/cpanel-email-autoresponders-4.png)
-
 ## Default Address
 
 The Default Address option works as the catchall address in cPanel. If the system receives an email for your domain and a forwarder or mailbox doesn't exist for the email, then the message will be delivered to the default address. By default, this is your cPanel's username at your primary domain name. You may want to disable this functionality or change the default address to a person or shared mailbox like info@example.com.

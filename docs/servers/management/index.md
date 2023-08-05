@@ -2,7 +2,7 @@
 
 ## What is Server Management Platform?
 
-Server Management Platform is a web-based control panel for managing your servers. It is designed to be easy to use and to provide a consistent experience across all of your servers. It manages both your [VPS](../vps/index.md) and [dedicated servers](../dedicated/index.md).
+Server Management Platform is a web-based control panel for managing your servers. It is designed to be easy to use and to provide a consistent experience across all of your servers. It manages both your [VPS](../vps/index.md) and [dedicated servers](../dedicated/overview.md).
 
 !!! note
     This is a new feature for dedicated server clients and is starting to become available for virtual server clients. Some features and functionality are not yet implemented for all server hardware models and configurations and some features may not be available in all pods.
