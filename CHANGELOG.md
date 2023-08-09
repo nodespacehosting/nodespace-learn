@@ -1,3 +1,6 @@
+2023-08-09
+- ADDED: IP Address Justification documentation
+
 2023-08-05
 - FIXED: [#234](https://bugzilla.nodespace.com/show_bug.cgi?id=234) - Fixed link to dedicated server overview.
 - FIXED: [#233](https://bugzilla.nodespace.com/show_bug.cgi?id=233) - Added link to remote MySQL connections for shared hosting. Just a placeholder for now.
