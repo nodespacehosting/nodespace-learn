@@ -157,6 +157,9 @@ nav:
   # --- BEGIN DEDICATED & VIRTUAL SERVERS ---
   - Dedicated &amp; Virtual Servers:
     - Overview: servers/overview.md
+    - Reseller Guide: 
+      - servers/reseller/index.md
+      - servers/reseller/server-management.md
     # --- BEGIN DEDICATED & VIRTUAL SERVERS: Dedicated Servers ---
     - Dedicated Servers: 
       - servers/dedicated/overview.md
