@@ -1,3 +1,6 @@
+2023-08-15
+- ADDED: Server reseller documentation
+
 2023-08-09
 - ADDED: IP Address Justification documentation
 
