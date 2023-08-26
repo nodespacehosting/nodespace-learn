@@ -20,9 +20,13 @@ Please contact technical support if you would like to discuss these different sc
 
 ## NAT & Port Forwarding
 
-If you want to use a single IP address on your Proxmox server, or you want to use your Proxmox server's main IP address for other things, you can use NAT and port forwarding. Follow these steps to set it up:
+If you want to use a single IP address on your Proxmox server, or you want to use your Proxmox server's main IP address for other things, you can use NAT and port forwarding. 
 
-### 1. Create a new bridge
+### How to set up NAT and port forwarding
+
+To set up NAT and port forwarding, you will need to do the following:
+
+#### 1. Create a new bridge
 
 !!! note
     This step is going to be done through SSH. While setting up a bridge through the Proxmox web interface is possible, the additional configuration we need to do is not available through the web interface.
@@ -48,7 +52,7 @@ iface vmbr1 inet static
 !!! note
     You can set the IP address to any private IP address range. Avoid "squatting" on IP addresses you don't have the ability to use and avoid using CGNAT ranges.
 
-### 2. Add NAT rules
+#### 2. Add NAT rules
 
 After the `bridge-fd 0` line, add the following lines:
 
@@ -67,18 +71,18 @@ Here's what these lines do:
 
 If you haven't saved the file yet, do so now.
 
-### 3. Restart networking
+#### 3. Restart networking
 
 At this point, while the rules have been added, they haven't been applied yet. To apply them, we need to restart networking. Run the following command:
 
 ```bash
 ifreload -a
 ```
-### 4. Test the new bridge
+#### 4. Test the new bridge
 
 Create a new VM and assign it a network interface on the bridge you just created. You will need to statically assign an IP address to the VM. Make sure the IP address is in the same subnet as the bridge. The gateway should be the IP address of the bridge. Once the VM is created, start it up and try to ping the gateway. If you can ping the gateway, try to ping an external IP address. If you can ping the external IP address, you're all set! You can run a command like `curl https://icanhazip.com` to verify the IP address you're using is your Proxmox server's main IP address.
 
-### 5. Set up port forwarding
+#### 5. Set up port forwarding
 
 Now that you have a working bridge, you can set up port forwarding. To do this, you'll need to SSH into your Proxmox server as the `root` user. Then, open the `/etc/network/interfaces` file in your favorite text editor. We'll use `nano` for this example:
 
@@ -109,7 +113,7 @@ These rules will port forward all traffic on port 80 to the IP address `10.10.10
     ```
     Make sure to replace `10.10.10.100` with the IP address of your reverse proxy. To use your reverse proxy, point the subdomain you want to use to your Proxmox server's main IP address. Then, configure your reverse proxy to forward traffic to the correct server based on the domain name.
 
-### 6. Restart networking
+#### 6. Restart networking
 
 At this point, while the rules have been added, they haven't been applied yet. To apply them, we need to restart networking. Run the following command:
 
@@ -117,7 +121,7 @@ At this point, while the rules have been added, they haven't been applied yet. T
 ifreload -a
 ```
 
-### 7. Test the port forwarding
+#### 7. Test the port forwarding
 
 At this point, you should be able to access the service you forwarded the port to. If you forwarded port 80 to a web server, you should be able to access it by going to `http://your-ip-address`. If you forwarded port 443 to a web server, you should be able to access it by going to `https://your-ip-address`. If you forwarded port 2222 to an SSH server, you should be able to SSH into it by running `ssh -p 2222 your-ip-address`. 
 
@@ -125,3 +129,13 @@ At this point, you should be able to access the service you forwarded the port t
     Remember that Proxmox has the SSH service listening on port 22. If you want to use port 22 for a different server, you will need to change the port Proxmox's SSH service listens on. You can do this by editing the `/etc/ssh/sshd_config` file and changing the `Port` line. Make sure to restart the SSH service after making the change.
 
 
+### How to port forward port ranges
+
+If you want to port forward a range of ports, you can use the following commands:
+
+```bash
+post-up   iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 10000:20000 -j DNAT --to 10.10.10.100
+post-down iptables -t nat -D PREROUTING -i vmbr0 -p tcp --dport 10000:20000 -j DNAT --to 10.10.10.100
+```
+
+This will forward all traffic on ports 10000 through 20000 to the IP address `10.10.10.100`. Make sure to replace the IP, port range, and protocol with the correct values for your setup.
