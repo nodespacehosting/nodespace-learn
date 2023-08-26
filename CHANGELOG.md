@@ -1,3 +1,6 @@
+2023-08-26
+- ADDED: [#255](https://bugzilla.nodespace.com/show_bug.cgi?id=255) - Added Proxmox NAT documentation
+
 2023-08-15
 - ADDED: Server reseller documentation
 
