@@ -263,6 +263,11 @@ nav:
       - guides/wordpress/install-wordpress-on-cpanel.md
     - Proxmox:
       - guides/proxmox/index.md
+    - VyOS:
+      - guides/vyos/index.md
+      - guides/vyos/cli-help.md
+      - guides/vyos/install.md
+      - guides/vyos/quick-start-config.md
   # -- END GUIDES ---
   # --- BEGIN CONTRIBUTING ---
   - Contributing:

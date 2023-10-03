@@ -8,12 +8,17 @@ This section contains helpful guides and examples for software that we may not f
 
 - title: WordPress
   content: Helpful guides for WordPress.
-  link: wordpress/index.md
+  url: wordpress/index.md
   image: images/wordpress.png
 
 - title: Proxmox
   content: Helpful guides for Proxmox.
-  link: proxmox/index.md
+  url: proxmox/index.md
   image: images/proxmox.png
+
+- title: VyOS
+  content: Helpful guides for VyOS.
+  url: vyos/index.md
+  image: images/VyOS.png
 
 ::/cards::

@@ -1,3 +1,6 @@
+2023-10-03
+- ADDED: [#305](https://bugzilla.nodespace.com/show_bug.cgi?id=305) - Added VyOS guides section & initial quick start guide
+
 2023-08-26
 - ADDED: [#255](https://bugzilla.nodespace.com/show_bug.cgi?id=255) - Added Proxmox NAT documentation
 
