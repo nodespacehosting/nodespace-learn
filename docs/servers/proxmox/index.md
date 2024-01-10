@@ -6,8 +6,6 @@ hide:
 
 NodeSpace offers [Proxmox Virtual Environment (PVE)](https://www.nodespace.com/servers/proxmox/), [Proxmox Backup Server (PBS)](https://www.nodespace.com/servers/proxmox/#backup), and [Proxmox Mail Gateway (PMG)](https://www.nodespace.com/servers/proxmox/#mail) on our platform. This section covers each of these products in detail for our platform.
 
-<a href="pve/upgrade-7-to-8.html"><img src="images/proxmox-8-upgrade.png"></a>
-
 !!! note "Refer to official documentation"
     The information contained in this site is geared towards configuring your service to work with [NodeSpace Hosting](https://www.nodespace.com). If you're following our guides for another service provider or a self-hosted environment, your configuration may differ. Please refer to the official documentation for your service provider. If your service provider doesn't have documentation or support for Proxmox, you may want to consider switching to NodeSpace Hosting.
 
