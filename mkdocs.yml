@@ -216,11 +216,7 @@ nav:
       - Proxmox VE:
         - servers/proxmox/pve/index.md
         - Admin Manuals: servers/proxmox/pve/guides.md
-        - Guides:
-          - servers/proxmox/pve/guide/sdn-vxlan.md
-          - servers/proxmox/pve/guide/use-single-ip.md
-          - servers/proxmox/pve/guide/securing-with-firewall.md
-          - servers/proxmox/pve/guide/ansible.md
+        - Guides: guides/proxmox/index.md
         - servers/proxmox/pve/networking.md
         - servers/proxmox/pve/upgrade-7-to-8.md
         # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
