@@ -218,11 +218,7 @@ nav:
         - Admin Manuals: servers/proxmox/pve/guides.md
         - Guides: guides/proxmox/index.md
         - servers/proxmox/pve/networking.md
-        - servers/proxmox/pve/upgrade-7-to-8.md
-        # --- BEGIN DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
-        - Solutions:
-          - servers/proxmox/pve/solutions/rhel9-kernel-panic.md
-        # --- END DEDICATED & VIRTUAL SERVERS: Proxmox: Proxmox VE: Solutions ---
+        - guides/proxmox/upgrade-7-to-8.md
       - Proxmox Backup Server:
         - Overview: servers/proxmox/pbs/index.md
         - New Server Setup: servers/proxmox/pbs/new-server.md

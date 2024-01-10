@@ -10,7 +10,7 @@ Proxmox Virtual Environment is an open-source server virtualization management p
 
 ## Helpful Guides
 
-- [How to upgrade Proxmox VE 7.x to 8.x](upgrade-7-to-8.md)
+- [How to upgrade Proxmox VE 7.x to 8.x](guides/proxmox/upgrade-7-to-8.md)
 
 ## Setting up ZFS
 
