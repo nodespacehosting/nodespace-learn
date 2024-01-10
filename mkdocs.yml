@@ -218,7 +218,7 @@ nav:
         - Admin Manuals: servers/proxmox/pve/guides.md
         - Guides: guides/proxmox/index.md
         - servers/proxmox/pve/networking.md
-        - guides/proxmox/upgrade-7-to-8.md
+        - Upgrade PVE 7 to 8: guides/proxmox/upgrade-7-to-8.md
       - Proxmox Backup Server:
         - Overview: servers/proxmox/pbs/index.md
         - New Server Setup: servers/proxmox/pbs/new-server.md
