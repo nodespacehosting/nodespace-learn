@@ -1,3 +1,6 @@
+2024-04-26
+- UPDATED: [#354](https://bugzilla.nodespace.com/show_bug.cgi?id=354) - Updated OS EOL dates for Fedora 38, Fedora 39, Fedora 40, Ubuntu 20.04, Ubuntu 22.04, Ubuntu 24.04, Proxmox VE 7, and Proxmox VE 8. Updated current OS versions for CentOS Stream, AlmaLinux, Rocky Linux, Fedora, Ubuntu, and Proxmox VE.
+
 2023-10-03
 - ADDED: [#305](https://bugzilla.nodespace.com/show_bug.cgi?id=305) - Added VyOS guides section & initial quick start guide
 

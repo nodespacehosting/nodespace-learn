@@ -8,12 +8,12 @@ Ubuntu is a Linux distribution based on Debian and mostly composed of free and o
 
 | Current Version | Supported Until |
 | --------------- | --------------- |
-| Ubuntu 18.04    | June 2022       |
 | Ubuntu 20.04    | April 2025      |
 | Ubuntu 22.04    | April 2027      |
+| Ubuntu 24.04    | April 2029      |
 
 !!! warning
-    Ubuntu 18.04 is EOL (End of Life) and will no longer receive updates after June 2022. We recommend upgrading to Ubuntu 20.04 or 22.04. While it is possible to still install Ubuntu 18.04, we do not recommend it.
+    NodeSpace will not provide or install versions of Ubuntu that are older than Ubuntu 20.04. If you require an older version of Ubuntu, you will need to install it yourself. NodeSpace support will not be able to assist you with older versions of Ubuntu.
 
 ## Using Ubuntu
 

@@ -8,8 +8,9 @@ Fedora is a Linux distribution developed by the community-supported Fedora Proje
 
 | Current Version | Supported Until |
 | --------------- | --------------- |
-| Fedora 37     | December 15, 2023 |
-| Fedora 38     | May 18, 2024      |
+| Fedora 38       | May 14, 2024    |
+| Fedora 39       | November 12, 2024 |
+| Fedora 40       | May 13, 2025    |
 
 ## Using Fedora
 

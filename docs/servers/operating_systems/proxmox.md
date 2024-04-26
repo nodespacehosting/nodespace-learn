@@ -9,10 +9,11 @@ Proxmox Virtual Environment (Proxmox VE) is an open-source server virtualization
 
 | Current Version | Supported Until |
 | --------------- | --------------- |
-| Proxmox VE 7    | June 30, 2026   |
+| Proxmox VE 7    | July 31, 2024   |
+| Proxmox VE 8    | TBA             |
 
 !!! note
-    We will provide or install Proxmox 6 upon request. Please [contact us](https://my.nodespace.com/submitticket.php) if you would like to use Proxmox VE 6 instead of Proxmox VE 7. Please keep in mind that Proxmox VE 6 is **End Of Life** and is not receiving any updates or security patches.
+    We will provide or install Proxmox 7 upon request. Please [contact us](https://my.nodespace.com/submitticket.php) if you would like to use Proxmox VE 7 instead of Proxmox VE 8. Please keep in mind that Proxmox VE 7 is **approaching End Of Life** and will not be receiving any updates or security patches after the EOL date.
 
 ## Using Proxmox VE
 

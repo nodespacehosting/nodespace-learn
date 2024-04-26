@@ -8,8 +8,8 @@ Rocky Linux is a community enterprise operating system designed to be 100% bug-f
 
 | Current Version | Supported Until    | 
 | --------------- | ------------------ |
-| Rocky Linux 8.8   | May 31, 2029       |
-| Rocky Linux 9.2   | May 31, 2032       |
+| Rocky Linux 8.9   | May 31, 2029       |
+| Rocky Linux 9.3   | May 31, 2032       |
 
 ## Using Rocky Linux
 
