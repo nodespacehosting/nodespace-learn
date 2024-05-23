@@ -4,6 +4,9 @@
 
 Proxmox Virtual Environment (Proxmox VE) is an open-source server virtualization management platform. It is based on Debian Linux, KVM, and LXC. Proxmox VE is a complete open-source platform for enterprise virtualization. With the built-in web interface you can easily manage VMs and containers, software-defined storage and networking, high-availability clustering, and multiple out-of-the-box tools on a single solution. Additionally, we offer [Proxmox Backup Server](proxmox/proxmox-backup-server.md), a backup solution for VMs and containers and [Proxmox Mail Gateway](proxmox/proxmox-mail-gateway.md), an open-source email security solution to protect your mail server.
 
+!!! note
+    NodeSpace is no longer installing Proxmox VE 7 on new server builds. We are keeping the media available for current customers, but all new servers will be installed with Proxmox VE 8 going forward.
+
 
 ## What versions of Proxmox are available?
 
