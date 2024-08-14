@@ -7,19 +7,18 @@ CentOS is a Linux distribution that provides a free, community-supported computi
 !!! warning "CentOS 8 Discontinued"
     CentOS 8 was discontinued on December 31, 2021. We recommend using [AlmaLinux 8](almalinux.md) instead.
 
+!!! warning "CentOS 7 Discontinued"
+    CentOS 7 was discontinued on June 30, 2024. We recommend using [AlmaLinux 8](almalinux.md) instead.
+
 ## What versions of CentOS are available?
 
 | Current Version | Supported Until    |
 | --------------- | ------------------ |
-| CentOS 7.9      | June 30, 2024      |
-| CentOS Stream 8 | May 31, 2024       |
 | CentOS Stream 9 | May 31, 2027       |
 
 !!! note "CentOS Stream"
     CentOS Stream is a rolling-release Linux distribution that tracks just ahead of Red Hat Enterprise Linux (RHEL) development, positioned as a midstream between Fedora Linux and RHEL. For more information, see the [CentOS Stream FAQ](https://www.centos.org/centos-stream/).
 
-!!! warning "Warning: CentOS 7 Approaching End of Life"
-    CentOS 7 will be discontinued on June 30, 2024. We recommend using [AlmaLinux 8](almalinux.md) instead. While CentOS 7 will continue to receive updates until June 30, 2024, it will not receive any security updates. CentOS 7 can still be installed, but we recommend using AlmaLinux 8 instead. As of April 2024, we will no longer offer CentOS 7 as an option for new installations.
 
 ## Using CentOS
 

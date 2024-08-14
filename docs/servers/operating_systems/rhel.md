@@ -8,7 +8,6 @@ Red Hat Enterprise Linux (RHEL) is a Linux distribution developed by Red Hat and
 
 | Current Version | Supported Until    |
 | --------------- | ------------------ |
-| RHEL 7          | June 30, 2024      |
 | RHEL 8          | May 31, 2029       |
 | RHEL 9          | May 31, 2032       |
 

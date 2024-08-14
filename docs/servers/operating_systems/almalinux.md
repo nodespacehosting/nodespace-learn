@@ -14,8 +14,8 @@ AlmaLinux tracks the Red Hat Enterprise Linux [life cycle](https://access.redhat
 
 | Current Version | Supported Until    | 
 | --------------- | ------------------ |
-| AlmaLinux 8.9   | May 31, 2029       |
-| AlmaLinux 9.3   | May 31, 2032       |
+| AlmaLinux 8.10  | May 31, 2029       |
+| AlmaLinux 9.4   | May 31, 2032       |
 
 ## Using AlmaLinux
 
