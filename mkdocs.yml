@@ -3,7 +3,7 @@ site_description: NodeSpace Docs is a collection of knowledge, guides, and tutor
 site_author: NodeSpace Technologies, LLC
 site_url: https://docs.nodespace.com
 use_directory_urls: false
-copyright: "Copyright &copy; NodeSpace Technologies, LLC"
+copyright: "Copyright &copy; 2025 NodeSpace Technologies, LLC"
 
 theme:
   name: material
