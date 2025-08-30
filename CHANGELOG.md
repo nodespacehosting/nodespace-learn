@@ -1,3 +1,6 @@
+2025-08-30
+- ADDED: [#364](https://bugzilla.nodespace.com/show_bug.cgi?id=364) - Added documentation for backup and snapshot management in VPS.
+
 2024-05-23
 - UPDATED: [#355](https://bugzilla.nodespace.com/show_bug.cgi?id=355) - Updated Proxmox VE article to clarify that we are no longer installing it.
 
